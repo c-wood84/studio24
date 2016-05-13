@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "authors": [
+    "cwc449 <wesley.chitwood1@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-scss": "^3.0.3",
+    "jquery": "^2.2.0",
+    "bootstrap-sass": "^3.3.6",
+    "skrollr": "^0.6.30",
+    "photoswipe": "^4.1.1",
+    "hover": "^2.0.2"
+  }
+}
