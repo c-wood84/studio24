@@ -49,11 +49,18 @@ header {
 
 
 
+
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) { 
+
+/*****************************
+CUSTOM MOBILE SOCIAL ICONS
+*******************************/
+@import "partials/masonry";
 
 	.header-padding { 
 		padding:5px 15px;
@@ -107,10 +114,7 @@ header {
 		}
 	}
 
-/*****************************
-CUSTOM MOBILE SOCIAL ICONS
-*******************************/
-@import "partials/masonry";
+
 
  }
 

@@ -48,12 +48,15 @@ CUSTOM MOBILE ONLY HAMBURGER
   transition: all 500ms ease-in-out;
   background: #a8a8a8;
 }
+
 .navbar-toggle .icon-bar:nth-child(2) {
   top: 0px;
 }
+
 .navbar-toggle .icon-bar:nth-child(3) {
   top: 0px;
 }
+
 .navbar-toggle .icon-bar:nth-child(4) {
   top: 0px;
 }
@@ -61,13 +64,17 @@ CUSTOM MOBILE ONLY HAMBURGER
 .navbar-toggle.active .icon-bar:nth-child(2) {
   top: 6px;
   -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
 .navbar-toggle.active .icon-bar:nth-child(3) {
   top: 0px;
   -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .navbar-toggle.active .icon-bar:nth-child(4) {
   display: none;
 }
@@ -80,16 +87,20 @@ Bootstrap Mobile Toggle Overwrite
   border-bottom: 1px solid #a8a8a8 !important;
   border-top: 1px solid #a8a8a8 !important;
 }
+
 .navbar-default .navbar-toggle {
   border: none;
 }
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background: transparent;
 }
+
 .navbar-default .navbar-collapse {
   background: #fff;
   border-color: #a8a8a8 !important;
 }
+
 .navbar-default .navbar-collapse .nav li {
   border-bottom: 1px solid #a8a8a8;
   vertical-align: middle;
@@ -97,13 +108,16 @@ Bootstrap Mobile Toggle Overwrite
   text-align: center;
   width: 100%;
 }
+
 .navbar-default .navbar-collapse .nav a {
   color: #2a2a2a !important;
   text-decoration: none;
 }
+
 .navbar-default .navbar-collapse .nav a:hover {
   color: #a8a8a8 !important;
 }
+
 .navbar-default .navbar-collapse .navbar-nav {
   margin: 0 -15px 7.5px -15px;
 }
@@ -116,10 +130,12 @@ CUSTOM MOBILE SOCIAL ICONS
   margin: 0 auto;
   padding: 6px 0;
 }
+
 #mobile-stickynav #social-mobile li {
   display: inline;
   padding: 2px 4px;
 }
+
 #mobile-stickynav #social-mobile li .fa {
   /* Mobile Font-Awesome ajustment */
   font-size: 25px;
@@ -139,10 +155,46 @@ header {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  /*****************************
+CUSTOM MOBILE SOCIAL ICONS
+*******************************/
+  #masonry {
+    background: #fff;
+    width: 100%;
+  }
+  .grid {
+    background: #fff;
+    width: 100%;
+  }
+  .grid div {
+    float: left;
+    width: 20%;
+    height: 159px;
+    margin: 0 2px 4px;
+  }
+  .grid .item-w2 {
+    width: 40%;
+  }
+  .grid .item-h2 {
+    height: 322px;
+  }
+  .grid .item-h3 {
+    height: 485px;
+  }
+  .isotope .isotope-item {
+    transition-duration: 0.8s;
+    transition-property: -webkit-transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .grid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease-in-out;
+  }
   .header-padding {
     padding: 5px 15px;
   }
-
   .main-nav {
     position: relative;
     top: 32px;
@@ -171,7 +223,6 @@ header {
   .main-nav a:hover, .main-nav a:focus {
     color: #a8a8a8 !important;
   }
-
   .social {
     position: relative;
     top: 32px;
@@ -188,50 +239,13 @@ header {
     font-size: 1.2em;
     padding: 0px;
   }
-
-  /*****************************
-  CUSTOM MOBILE SOCIAL ICONS
-  *******************************/
-  /* ---- grid ---- */
-  .grid {
-    background: #DDD;
-  }
-
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  /* ---- .element-item ---- */
-  /* 5 columns, percentage width */
-  .grid-item,
-  .grid-sizer {
-    width: 20%;
-  }
-
-  .grid-item {
-    float: left;
-    height: 100px;
-    background: #0D8;
-    border: 2px solid #333;
-    border-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .grid-item--width2 {
-    width: 40%;
-  }
-
-  .grid-item--height2 {
-    height: 200px;
-  }
 }
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /********************************
-  Header, Navigation, Social Icons Styles
-  ********************************/
+Header, Navigation, Social Icons Styles
+********************************/
   .main-nav {
     position: relative;
     top: 32px;
@@ -247,11 +261,9 @@ header {
     margin-top: 15px;
     font-size: 1.1em;
   }
-
   .nav > li > a {
     padding: 10px 10px;
   }
-
   .social {
     position: relative;
     top: 32px;
@@ -269,4 +281,7 @@ header {
     padding: 5px;
   }
 }
+
 /* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=../maps/style.css.map */

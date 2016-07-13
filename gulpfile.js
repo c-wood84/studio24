@@ -1,115 +1,158 @@
-//////////////////////////////////////////////////
-// Required
-//////////////////////////////////////////////////
+// ////////////////////////////////////////////////
+//
+// EDIT CONFIG OBJECT BELOW !!!
+// 
+// jsConcatFiles => list of javascript files (in order) to concatenate
+// buildFilesFoldersRemove => list of files to remove when running final build
+// // //////////////////////////////////////////////
+
+var config = {
+	jsConcatFiles: [
+		'./app/js/module1.js', 
+		'./app/js/main.js'
+	], 
+	buildFilesFoldersRemove:[
+		'build/scss/', 
+		'build/js/!(*.min.js)',
+		'build/bower.json',
+		'build/bower_components/',
+		'build/maps/'
+	]
+};
+
+
+// ////////////////////////////////////////////////
+// Required taskes
+// gulp build
+// bulp build:serve
+// // /////////////////////////////////////////////
 
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify');
-	browserSync = require('browser-sync');
+	sass = require('gulp-sass'),
+	sourcemaps = require('gulp-sourcemaps'),
+	autoprefixer = require('gulp-autoprefixer'),
+	browserSync = require('browser-sync'),
 	reload = browserSync.reload,
-	compass = require('gulp-compass');
-	plumber = require('gulp-plumber');
-	autoprefixer = require('gulp-autoprefixer');
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename'),
 	del = require('del');
-	rename = require('gulp-rename');
 
-//////////////////////////////////////////////////
-// Script Tasks
-//////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
+// Log Errors
+// // /////////////////////////////////////////////
+
+function errorlog(err){
+	console.error(err.message);
+	this.emit('end');
+}
+
+
+// ////////////////////////////////////////////////
+// Scripts Tasks
+// ///////////////////////////////////////////////
+
 gulp.task('scripts', function() {
-	gulp.src(['app/js/**/*.js', '!app/js/**/*.min.js'])
-	.pipe(plumber())
-	.pipe(rename({suffix:'.min'}))
-	.pipe(uglify())
-	.pipe(gulp.dest('app/js'))
-	.pipe(reload({stream:true}));
+  return gulp.src(config.jsConcatFiles)
+	.pipe(sourcemaps.init())
+		.pipe(concat('temp.js'))
+		.pipe(uglify())
+		.on('error', errorlog)
+		.pipe(rename('app.min.js'))		
+    .pipe(sourcemaps.write('../maps'))
+    .pipe(gulp.dest('./app/js/'))
+
+    .pipe(reload({stream:true}));
 });
 
-//////////////////////////////////////////////////
-// Compass / Sass Tasks
-//////////////////////////////////////////////////
-gulp.task('compass', function(){
+
+// ////////////////////////////////////////////////
+// Styles Tasks
+// ///////////////////////////////////////////////
+
+gulp.task('styles', function() {
 	gulp.src('app/scss/style.scss')
-	.pipe(plumber())
-	.pipe(compass({
-		config_files: './config.rb',
-		css: 'app/css',
-		sass: 'app/scss'
-	}))
-	.pipe(autoprefixer('last 2 versions'))
-	.pipe(gulp.dest('app/css/'))
-	.pipe(reload({stream:true}));
-
+		.pipe(sourcemaps.init())
+			.pipe(sass({outputStyle: 'expanded'}))
+			.on('error', errorlog)
+			.pipe(autoprefixer({
+	            browsers: ['last 3 versions'],
+	            cascade: false
+	        }))	
+		.pipe(sourcemaps.write('../maps'))
+		.pipe(gulp.dest('app/css'))
+		.pipe(reload({stream:true}));
 });
 
-//////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
 // HTML Tasks
-//////////////////////////////////////////////////
+// // /////////////////////////////////////////////
+
 gulp.task('html', function(){
-	gulp.src('app/**/*.html')
+    gulp.src('app/**/*.html')
+    .pipe(reload({stream:true}));
 });
 
 
+// ////////////////////////////////////////////////
+// Browser-Sync Tasks
+// // /////////////////////////////////////////////
 
-//////////////////////////////////////////////////
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "./app/"
+        }
+    });
+});
+
+// task to run build server for testing final app
+gulp.task('build:serve', function() {
+    browserSync({
+        server: {
+            baseDir: "./build/"
+        }
+    });
+});
+
+
+// ////////////////////////////////////////////////
 // Build Tasks
-//////////////////////////////////////////////////
+// // /////////////////////////////////////////////
 
-//clear out all files and folders from build folder
-gulp.task('build:cleanfolder', function(cb){
+// clean out all files and folders from build folder
+gulp.task('build:cleanfolder', function (cb) {
 	del([
 		'build/**'
-		], cb);
+	], cb);
 });
 
-// Task to create build for all files
+// task to create build directory of all files
 gulp.task('build:copy', ['build:cleanfolder'], function(){
-	return gulp.src('app/**/*')
-	.pipe(gulp.dest('build'));
+    return gulp.src('app/**/*/')
+    .pipe(gulp.dest('build/'));
 });
 
-// Task to remove unwanted build files
-//list all files and directories here that you don't want to include
-gulp.task('build:remove', ['build:copy',], function(cb){
-	del([
-		'build/scss',
-		'build/js/!(*.min.js)'
-		], cb);
+// task to removed unwanted build files
+// list all files and directories here that you don't want included
+gulp.task('build:remove', ['build:copy'], function (cb) {
+	del(config.buildFilesFoldersRemove, cb);
 });
 
 gulp.task('build', ['build:copy', 'build:remove']);
 
-//////////////////////////////////////////////////
-// Browser-Sync Tasks
-//////////////////////////////////////////////////
-gulp.task('browser-sync', function(){
-	browserSync({
-		server:{
-			baseDir: "./app/"
-		}
-	});
 
-});
-
-gulp.task('build:serve', function(){
-	browserSync({
-		server:{
-			baseDir: "./build/"
-		}
-	});
-
-});
-
-
-//////////////////////////////////////////////////
+// ////////////////////////////////////////////////
 // Watch Tasks
-//////////////////////////////////////////////////
-gulp.task('watch', function(){
+// // /////////////////////////////////////////////
+
+gulp.task ('watch', function(){
+	gulp.watch('app/scss/**/*.scss', ['styles']);
 	gulp.watch('app/js/**/*.js', ['scripts']);
-	gulp.watch('app/scss/**/*.scss', ['compass']);
-	gulp.watch('app/**/*.html', ['html']);
+  	gulp.watch('app/**/*.html', ['html']);
 });
 
-//////////////////////////////////////////////////
-// Default Tasks
-//////////////////////////////////////////////////
-gulp.task('default', ['scripts', 'compass', 'html', 'browser-sync', 'watch']);
+
+gulp.task('default', ['scripts', 'styles', 'html', 'browser-sync', 'watch']);
