@@ -1,0 +1,141 @@
+
+$white: #fff;
+$black: #2a2a2a;
+$teal: #02c8d8;
+$grey: #a8a8a8;
+$font-main: helvetica, sans-serif;
+
+*	{ margin:0;
+	  padding: 0;
+
+
+}
+
+
+body { background:green;}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+
+	body { background:red;}
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	.intro	{ width:100%;
+			  height: 756px;
+			  background-size:cover;
+			  background:url('../images/intro-Lg.jpg') 50% 50% no-repeat;
+
+			  .logo { width:400px;
+			  		  height: auto;
+			  		  cursor: pointer;
+			  		  position: relative;
+			  		  top: 20%;
+			  		  left: 35%;
+			  }
+
+			  // .logo-intro	{ display:inline-block;
+			  // 				  vertical-align: middle;
+
+			  // }
+
+			  .scrollCue { position: absolute;
+			  			   bottom: 37px;
+			  			   left: 50%;
+			  			   width: 43px;
+			  			   height: 43px;
+			  			   margin-left: -23px;
+			  			   border:2px solid $white;
+			  			   border-radius:25px;
+			  			   -webkit-border-radius: 25px;
+			  			   -moz-border-radius:25px;
+			  			   text-align: center;
+			  			   opacity: 1;
+			  			   cursor: pointer;
+
+			  	span { position: absolute;
+			  		   top: 15px;
+			  		   left: 16px;
+			  		   width: 9px;
+			  		   height: 9px;
+			  		   border-bottom:2px solid $white;
+			  		   border-right:2px solid $white;
+			  		   transform: rotate(45deg);
+			  	}
+			  }
+
+			}
+
+
+
+
+	#stickyheader	{ width:100%;
+				  	  height: 150px;
+				  	  background: $white;
+				  	  border-bottom:2px solid $grey;
+
+				#logo { width:137px;
+						height: 100px;
+						margin: 0 auto;
+						padding:5px 0;
+
+				}
+
+
+		.nav	{ width: 78%;
+				  margin: 0 auto;
+				  float: right;
+
+			li { display: inline-block;
+				padding:0 20px;
+				line-height: 1.5em;
+				font-size: 17px;
+
+				.circle { background:$grey;
+						  width: 9px;
+						  height: 9px;
+						  float: right;
+						  border-radius:15px;
+
+				}
+			}
+
+				a { color: $black;
+					text-decoration: none;
+						}
+			}
+
+		.nav > li a:hover, .nav > li a:focus {  background:transparent;
+											    color: $grey;
+					}
+		.nav > li a:focus {  background:transparent;
+					}
+
+		.nav > li.active { border-bottom:3px solid $teal;
+						     background:transparent;
+						}
+		}
+
+	.sticky { position: fixed;
+			  top:0;
+			  z-index: 5;
+
+	}
+
+	
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	body { background:#fff;
+
+	}
+}

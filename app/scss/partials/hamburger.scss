@@ -1,0 +1,46 @@
+
+.navbar-toggle {
+	.icon-bar {
+				position: relative;
+				transition: all 500ms ease-in-out;
+				background: $grey
+			}
+			.icon-bar:nth-child(2) {
+				top: 0px;
+			}
+
+			.icon-bar:nth-child(3) {
+				top: 0px;
+			}
+
+			.icon-bar:nth-child(4) {
+				top: 0px;
+			}
+}
+
+.navbar-toggle.active {
+			.icon-bar:nth-child(2) {
+				top: 6px;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+
+			.icon-bar:nth-child(3) {
+				top: 0px;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+
+			.icon-bar:nth-child(4) {
+				display: none;
+				
+
+			}
+
+		}
