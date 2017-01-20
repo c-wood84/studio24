@@ -1,41 +1,40 @@
-
-
-jQuery(function($) {
-
-  $('body').scrollspy({
-    target: '#stickyheader',
-    offset: 40
-  });
-
-  $(window).scroll(function() {
-  
-    var scrollVar = $(window).scrollTop();
-  
-    if (scrollVar > 770) {
-      $('#stickyheader').addClass('sticky');
-      
-    }
-  
-    if (scrollVar < 770) {
-      $('#stickyheader').removeClass('sticky');
-     
-    }
-  });
-
- 
-
-  $('#stickyheader ul li a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top - 77
-    }, 980, 'swing', function() {
-      window.location.hash = target;
-    });
-  });
-
-
-});
+(function ($) {
+	var $container = $('.grid'),
+		colWidth = function () {
+			var w = $container.width(), 
+				columnNum = 1,
+				columnWidth = 0;
+			if (w > 1200) {
+				columnNum  = 5;
+			} else if (w > 900) {
+				columnNum  = 4;
+			} else if (w > 600) {
+				columnNum  = 3;
+			} else if (w > 300) {
+				columnNum  = 2;
+			}
+			columnWidth = Math.floor(w/columnNum);
+			$container.find('.item').each(function() {
+				var $item = $(this),
+					multiplier_w = $item.attr('class').match(/item-w(\d)/),
+					multiplier_h = $item.attr('class').match(/item-h(\d)/),
+					width = multiplier_w ? columnWidth*multiplier_w[1]-4 : columnWidth-4,
+					height = multiplier_h ? columnWidth*multiplier_h[1]*0.5-4 : columnWidth*0.5-4;
+				$item.css({
+					width: width,
+					height: height
+				});
+			});
+			return columnWidth;
+		},
+		isotope = function () {
+			$container.isotope({
+				itemSelector: '.item',
+				masonry: {
+					columnWidth: colWidth()
+				}
+			});
+		};
+    isotope();
+    $(window).on('debouncedresize', isotope);
+}(jQuery));
