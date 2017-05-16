@@ -1,5 +1,4 @@
 
-
 jQuery(function($) {
 
   $('body').scrollspy({
@@ -11,12 +10,12 @@ jQuery(function($) {
   
     var scrollVar = $(window).scrollTop();
   
-    if (scrollVar > 770) {
+    if (scrollVar > 150) {
       $('#stickyheader').addClass('sticky');
       
     }
   
-    if (scrollVar < 770) {
+    if (scrollVar < 151) {
       $('#stickyheader').removeClass('sticky');
      
     }
