@@ -1,0 +1,130 @@
+
+.mobile-logo {
+	text-align: center;
+	border-bottom: 2px solid $teal;
+	img {
+		width: 30%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+/****** Bootstrap Toggle Ovdride ********/
+.navbar-default { 
+	background: transparent;
+	border-bottom: 1px solid $grey !important;
+	border-top: 1px solid $grey !important;
+	.navbar-toggle {
+			border:none;
+		}
+	.navbar-toggle:focus, .navbar-toggle:hover {
+			background: transparent;
+		}
+
+			.navbar-collapse {
+					background: #fff;
+					border-color: $grey !important;
+				.nav{
+					li {
+						border-bottom: 1px solid $grey;
+						vertical-align: middle;
+						margin: 0px auto;
+						text-align: center;
+						width: 100%;
+					}
+					a {
+						color: $black !important;
+						text-decoration: none;
+					}
+					a:hover {
+						color: $grey !important;
+					}
+				}
+				.navbar-nav {
+					margin: 0 -15px 4px -15px;
+				}
+			}
+	}
+
+/****** Mobile Social Icons ********/
+#social-icons {
+	height: 42px;
+	background: $white;
+	width: 350px;
+	margin: 3px auto;
+	padding: 6px 0;
+	text-align: center;
+	i {
+			padding: 5px;
+		}
+
+}
+
+.badge.mobile-social {
+	background: $grey;
+	width: 30px;
+	height: 30px;
+	font-size: 17px;
+	line-height: 32px;
+	@include circle;
+	color: $white;
+}
+
+.badge.mobile-social.facebook:hover {
+	background-color: $facebook;
+}
+
+.badge.mobile-social.twitter:hover {
+	background-color: $twitter;
+}
+
+.badge.mobile-social.linked-in:hover {
+	background-color: $linkedin;
+}
+
+.badge.mobile-social.instagram:hover {
+	background-color: $instagram;
+}
+
+.badge.mobile-social.gplus:hover {
+	background-color: $googleplus;
+}
+
+.badge.mobile-social.pintrest:hover {
+	background-color: $pinterest;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

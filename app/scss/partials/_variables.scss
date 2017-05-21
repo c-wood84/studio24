@@ -1,0 +1,84 @@
+//Colors
+$white: #fff;
+$black: #2a2a2a;
+$teal: #02c8d8;
+$grey: #a8a8a8;
+
+
+/* SASS / Social Media Brand Colors */
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #1ab7ea;
+$tumblr: #32506d;
+$instagram: #bc2a8d;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$forrst: #5B9A68;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #EB4823;
+$yahoo: #7B0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;
+
+//Primary Colors
+$primary: $teal;
+$secondary: $grey;
+
+//Font Weight
+$light: 300;
+$normal: normal;
+$medium: 500;
+$thick: bold;
+$thicker: 900;
+
+//Typography
+$font-heading: 'Josefin Sans', sans-serif;
+$font-main: helvetica, sans-serif;
+$font-weight: $normal;
+$heading-weight: $thick;
+
+//Font Sizes
+$text-h1:3rem;
+$text-h2:2.5rem;
+$text-h3:2rem;
+$text-h4:1.75rem;
+$text-nav:1.3rem;
+$text-p: 13px;
+$line-height: 1.4em;
+
+$main-heading: $text-h1;
+$section-headings: $text-h2;
+
+//Button Variables
+$studio24-btn: $grey;
+$studio24-btn-hover:$teal;
+
+
+
+
+//Breakpoint
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}

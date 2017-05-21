@@ -1,0 +1,206 @@
+/* === Global Styles === */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	@include sexy-text;
+	font-weight: $thick;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 { font-size: 2.65rem;
+
+}
+
+h3 { font-size: 2.2rem;
+
+}
+
+h4 { font-size: 1.57rem;
+
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+p.lead {
+	font-weight: $normal;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: $primary;
+}
+
+a:hover {
+	text-decoration: none;
+	color: $grey;
+}
+
+button, input, select, .btn, a.btn {
+	@include sexy-text;
+	color: #fff;
+}
+
+.btn {
+	font-weight: $thick;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn-24 {
+	background: $studio24-btn;
+}
+
+.btn-24:hover {
+	background: $studio24-btn-hover;
+}
+
+blockquote {
+	font-style: italic;
+	border: none;
+	font-size: 1.5686rem;
+	font-weight: $normal;
+	padding: 7px 15px;
+	margin: 0 15px;
+}
+
+
+.badge.social {
+	background: $grey;
+	font-size: 24px;
+	width: 35px;
+	height: 35px;
+	line-height: 37px;
+	color: $white;
+	@include circle;
+}
+
+.badge.social.facebook:hover {
+	background-color: $facebook;
+}
+
+.badge.social.twitter:hover {
+	background-color: $twitter;
+}
+
+.badge.social.linked-in:hover {
+	background-color: $linkedin;
+}
+
+.badge.social.instagram:hover {
+	background-color: $instagram;
+}
+
+.badge.social.gplus:hover {
+	background-color: $googleplus;
+}
+
+.badge.social.pintrest:hover {
+	background-color: $pinterest;
+}
+
+.form-control {
+	background: $black;
+	border: 1px solid $grey;
+	color:$white;
+	height: 34px;
+	padding: 4px 8px;
+	border-radius: 0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	width: 92%;
+}
+
+.navbar-brand {
+	padding: 0 15px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: transparent;
+}
+
+.nav > li > a {
+	padding: 10px 15px;
+
+}
+
+@import 'partials/_mobile-hamburger.scss';
+
+
+/********* Mobile Icons /*********/
+
+
+
+/********* Mobile Navigation /*********/
+
+// .nav > li > a:hover,
+// .nav > li > a:focus {
+//   text-decoration: none;
+//   background: transparent;
+// }
+
+// .nav > li > a {
+// 	padding: 10px 15px;
+
+// }
+
+// .navbar-nav {
+// 	border-bottom: 1px solid $grey;
+// 	border-top: 1px solid $grey;
+// 	width: 100%;
+// 	.navbar-toggle {
+// 			border:none;
+// 		}
+//  	.navbar-toggle:focus, .navbar-toggle:hover {
+// 			background: transparent;		}
+// }
+
+
+// .navbar-collapse {
+// 	padding: 0;
+// 	background: #fff;
+// 	width: 100%;
+// 	margin-top: 0;
+// 	.nav {
+// 		li {
+// 			border-bottom: 1px solid $grey;
+// 			vertical-align: middle;
+// 			margin: 0 auto;
+// 			text-align: center;
+// 			width: 100%;
+// 					}
+
+// 		a {
+// 			color: $black !important;
+// 			text-decoration: none;
+// 					}
+// 					a:hover {
+// 						color: $grey !important;
+// 					}
+
+// 	}
+// 	.navbar-nav {
+// 		margin: 0;
+// 	}
+// }
+
