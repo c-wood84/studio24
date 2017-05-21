@@ -1,35 +1,151 @@
-/*******************************
-COLORS STYLES
-*******************************/
-/*******************************
-FONTS
-*******************************/
-/*******************************
-GENERAL BASE STYLES
-*******************************/
+/* SASS / Social Media Brand Colors */
+/* === General Styles === */
 body {
   background: #fff;
   font-family: helvetica, sans-serif;
   font-style: normal;
-  font-weight: 300;
+}
+
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.65rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.57rem;
 }
 
 img {
   max-width: 100%;
 }
 
+p {
+  margin: 0 0 15px;
+}
+
+p.lead {
+  font-weight: normal;
+}
+
 a {
-  color: #02c8d8 !important;
-  text-decoration: underline;
+  color: #02c8d8;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #02c8d8;
 }
 
 a:hover {
-  color: #a8a8a8 !important;
+  text-decoration: none;
+  color: #a8a8a8;
 }
 
-/*******************************
-GENERAL BOOTSTRAP OVERIDE STYLES
-*******************************/
+button, input, select, .btn, a.btn {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-24 {
+  background: #a8a8a8;
+}
+
+.btn-24:hover {
+  background: #02c8d8;
+}
+
+blockquote {
+  font-style: italic;
+  border: none;
+  font-size: 1.5686rem;
+  font-weight: normal;
+  padding: 7px 15px;
+  margin: 0 15px;
+}
+
+.badge.social {
+  background: #a8a8a8;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  color: #fff;
+  padding: 0;
+  margin: 0 5px 20px 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.badge.social.facebook:hover {
+  background-color: #3b5998;
+}
+
+.badge.social.twitter:hover {
+  background-color: #00aced;
+}
+
+.badge.social.linked-in:hover {
+  background-color: #007bb6;
+}
+
+.badge.social.instagram:hover {
+  background-color: #bc2a8d;
+}
+
+.badge.social.gplus:hover {
+  background-color: #dd4b39;
+}
+
+.badge.social.pintrest:hover {
+  background-color: #cb2027;
+}
+
+.form-control {
+  background: #2a2a2a;
+  border: 1px solid #a8a8a8;
+  color: #fff;
+  height: 34px;
+  padding: 4px 8px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  width: 92%;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
@@ -40,13 +156,19 @@ GENERAL BOOTSTRAP OVERIDE STYLES
   padding: 10px 15px;
 }
 
-/*****************************
-CUSTOM MOBILE ONLY HAMBURGER 
-*******************************/
+/* ==== Custom Mobile Hamburger ==== */
+.navbar-toggle {
+  margin-top: 16px;
+  margin-right: 0;
+}
+
 .navbar-toggle .icon-bar {
   position: relative;
   transition: all 500ms ease-in-out;
   background: #a8a8a8;
+  border-radius: 89%;
+  height: 4px;
+  width: 40px;
 }
 
 .navbar-toggle .icon-bar:nth-child(2) {
@@ -79,9 +201,19 @@ CUSTOM MOBILE ONLY HAMBURGER
   display: none;
 }
 
-/*******************************
-Bootstrap Mobile Toggle Overwrite
-*******************************/
+/********* Mobile Icons /*********/
+/********* Mobile Navigation /*********/
+.mobile-logo {
+  text-align: center;
+  border-bottom: 2px solid #02c8d8;
+}
+
+.mobile-logo img {
+  width: 30%;
+  height: auto;
+}
+
+/****** Bootstrap Toggle Ovdride ********/
 .navbar-default {
   background: transparent;
   border-bottom: 1px solid #a8a8a8 !important;
@@ -119,170 +251,405 @@ Bootstrap Mobile Toggle Overwrite
 }
 
 .navbar-default .navbar-collapse .navbar-nav {
-  margin: 0 -15px 7.5px -15px;
+  margin: 0 -15px 4px -15px;
 }
 
-/*****************************
-CUSTOM MOBILE SOCIAL ICONS
-*******************************/
-#mobile-stickynav #social-mobile {
-  width: 200px;
-  margin: 0 auto;
+/****** Mobile Social Icons ********/
+#social-icons {
+  height: 42px;
+  background: #fff;
+  width: 350px;
+  margin: 3px auto;
   padding: 6px 0;
-}
-
-#mobile-stickynav #social-mobile li {
-  display: inline;
-  padding: 2px 4px;
-}
-
-#mobile-stickynav #social-mobile li .fa {
-  /* Mobile Font-Awesome ajustment */
-  font-size: 25px;
-}
-
-header {
-  min-height: 100px;
-  width: 100%;
-  border-bottom: 1px solid black;
-}
-
-.logo {
   text-align: center;
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+#social-icons i {
+  padding: 5px;
+}
+
+.badge.mobile-social {
+  background: #a8a8a8;
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  line-height: 32px;
+  padding: 0;
+  margin: 0 5px 20px 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  color: #fff;
+}
+
+.badge.mobile-social.facebook:hover {
+  background-color: #3b5998;
+}
+
+.badge.mobile-social.twitter:hover {
+  background-color: #00aced;
+}
+
+.badge.mobile-social.linked-in:hover {
+  background-color: #007bb6;
+}
+
+.badge.mobile-social.instagram:hover {
+  background-color: #bc2a8d;
+}
+
+.badge.mobile-social.gplus:hover {
+  background-color: #dd4b39;
+}
+
+.badge.mobile-social.pintrest:hover {
+  background-color: #cb2027;
+}
+
+/* ==== Navigation Header ==== */
+#header-sticky {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 3px solid #02c8d8;
+  width: 100%;
+  z-index: 100;
+  padding: 5px 10px;
+}
+
+#header-sticky .navbar-wrapper {
+  padding: 0;
+}
+
+#header-sticky .seperator {
+  width: 5px;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 1.5rem !important;
+}
+
+#header-sticky .main-nav {
+  position: relative;
+  top: 8px;
+}
+
+#header-sticky .main-nav li {
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: relative;
+}
+
+#header-sticky .main-nav a:link, #header-sticky .main-nav a:visited {
+  color: #2a2a2a;
+}
+
+#header-sticky .main-nav a:hover {
+  color: #a8a8a8;
+}
+
+/* ==== Header Social Icons ==== */
+.social-header-icons {
+  position: relative;
+  top: 20px;
+  text-align: right;
+}
+
+.social-header-icons i {
+  padding: 5px;
+}
+
+/* ==== HERO ==== */
+#hero {
+  background: url("../images/studio24-hero-bg.jpg") 0 no-repeat fixed;
+  min-height: 970px;
+  background-size: cover;
+  padding: 40px 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#hero article {
+  width: 100%;
+  text-align: center;
+}
+
+#hero article .hero-text {
+  margin-top: 35px;
+  font-weight: normal;
+  position: relative;
+  top: 75px;
+}
+
+#hero article .hero-text h1 {
+  color: #2a2a2a;
+}
+
+#hero article .hero-text h1 .dot {
+  width: 5px;
+  height: 5px;
+  margin-top: 10px;
+  color: #02c8d8;
+  border-radius: 50%;
+}
+
+#hero article #scrollCue {
+  position: absolute;
+  top: 620px;
+  left: 50%;
+  width: 43px;
+  height: 43px;
+  margin-left: -23px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  text-align: center;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#hero article #scrollCue span {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 9px;
+  height: 9px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hero article #social-hero {
+  position: absolute;
+  top: 500px;
+  z-index: 5;
+  width: 75px;
+}
+
+#hero article #social-hero .badge {
+  display: block;
+  margin: 10px 0 10px 20px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+/* ==== LAYOUT ==== */
+section {
+  padding: 50px 0;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 20px 0 30px;
+  color: #2a2a2a;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #02c8d8;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* ==== PHOTOGRAPHY GALLERY ==== */
+#gallery-showcase {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+#gallery-showcase .image-pod {
+  height: 300px;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+
+#gallery-showcase .image-pod h3 {
+  padding: 8px;
+  text-transform: uppercase;
+  border: 1px solid #a8a8a8;
+  font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  right: 14px;
+  z-index: 100;
+  background: #000;
+  margin: 0;
+}
+
+#gallery-showcase .image-pod h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#gallery-pod {
+  background: url("../images/paris-gallery-pod.jpg") 0 48% no-repeat;
+  background-size: cover;
+}
+
+#panoramic-pod {
+  background: url("../images/beach-panoramic-pod.jpg") 0 50% no-repeat;
+  background-size: cover;
+}
+
+#print-pod {
+  background: url("../images/maine-waterfall-print-pod.jpg") 0 50% no-repeat;
+  background-size: cover;
+}
+
+/* ==== TESTIMONIAL ==== */
+.testimonial i {
+  float: right;
+}
+
+.testimonial .fa {
+  font-size: 5rem;
+  padding: 7px;
+}
+
+/* ==== CONTACT ==== */
+#contact {
+  background: url("../images/contact-bg-stock.jpg") center fixed;
+  background-position: 0;
+  background-size: cover;
+  padding: 0;
+  min-height: 450px;
+}
+
+#contact .section-header h2 {
+  color: #fff;
+}
+
+#contact .dotted-line {
+  border: none;
+}
+
+#contact h3 {
+  color: #fff;
+  letter-spacing: 0.004rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#contact p {
+  color: #fff;
+  line-height: 2.2rem;
+}
+
+#contact .contact-info ul {
+  list-style: none;
+}
+
+#contact .contact-info li {
+  padding: 5px 0;
+  color: #fff;
+  font-size: 1.55rem;
+}
+
+#contact .contact-info li .fa {
+  color: #02c8d8;
+  padding: 0 10px;
+  font-size: 21px;
+}
+
+#contact .contact-info li a:link, #contact .contact-info li a:visited, #contact .contact-info li a:active {
+  color: #fff;
+}
+
+#contact .contact-info li a {
+  color: #fff;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: #2a2a2a;
+  color: #a8a8a8;
+  padding: 10px 5px;
+}
+
+/* ==== GALLERY ==== */
+#gallery {
+  background: #fff;
+}
+
+#gallery ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery .grid-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gallery .grid-wide {
+  -ms-grid-column: span 3;
+  grid-column: span 3;
+  -ms-grid-row: span 2;
+  grid-row: span 2;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /*****************************
-CUSTOM MOBILE SOCIAL ICONS
-*******************************/
-  #masonry {
-    background: #fff;
-    width: 100%;
+  .navbar-nav {
+    border: none;
+    width: auto;
+    margin: 7.5px -15px;
   }
-  .grid {
-    background: #fff;
-    width: 100%;
+  /* ==== PHOTOGRAPHY GALLERY ==== */
+  #gallery-showcase .image-pod {
+    height: 450px;
   }
-  .grid div {
-    float: left;
-    width: 20%;
-    height: 159px;
-    margin: 0 2px 4px;
+  #gallery-showcase .image-pod h3 {
+    right: 0;
   }
-  .grid .item-w2 {
-    width: 40%;
+  #gallery-showcase #gallery-pod {
+    background: url("../images/paris-gallery-pod.jpg") no-repeat;
+    background-size: cover;
   }
-  .grid .item-h2 {
-    height: 322px;
+  #gallery-showcase #panoramic-pod {
+    background: url("../images/beach-panoramic-pod.jpg") no-repeat;
+    background-size: cover;
   }
-  .grid .item-h3 {
-    height: 485px;
+  #gallery-showcase #print-pod {
+    background: url("../images/maine-waterfall-print-pod.jpg") no-repeat;
+    background-size: cover;
   }
-  .isotope .isotope-item {
-    transition-duration: 0.8s;
-    transition-property: opacity, -webkit-transform;
-    transition-property: transform, opacity;
-    transition-property: transform, opacity, -webkit-transform;
+  /* ==== CONTACT ==== */
+  #contact .dotted-line {
+    border-right: 0.2rem dashed #a8a8a8;
   }
-  .grid img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: all 0.7s ease-in-out;
-  }
-  .header-padding {
-    padding: 5px 15px;
-  }
-  .main-nav {
-    position: relative;
-    top: 32px;
-  }
-  .main-nav li {
-    padding: 5px 1px;
-    font-size: .8em;
-    font-weight: 500;
-    color: #a8a8a8;
-    display: inline-block;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    vertical-align: top;
-    position: relative;
-  }
-  .main-nav .seperator {
-    width: 5px;
-    padding: 0;
-    margin-top: 18px;
-    font-size: .9em;
-  }
-  .main-nav a {
-    text-decoration: none;
-    color: #2a2a2a !important;
-  }
-  .main-nav a:hover, .main-nav a:focus {
-    color: #a8a8a8 !important;
-  }
-  .social {
-    position: relative;
-    top: 32px;
-  }
-  .social #social-icons {
-    list-style: none;
-    margin-top: 15px;
-  }
-  .social #social-icons li {
-    display: inline-block;
-    padding: 0px 5px;
-  }
-  .social #social-icons li .fa {
-    font-size: 1.2em;
-    padding: 0px;
+  /* ==== FOOTER ==== */
+  footer .developer {
+    text-align: right;
   }
 }
 
-/* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /********************************
-Header, Navigation, Social Icons Styles
-********************************/
-  .main-nav {
-    position: relative;
-    top: 32px;
-  }
-  .main-nav li {
-    padding: 5px;
-    font-size: .9em;
-    font-weight: 500;
-  }
-  .main-nav .seperator {
+  .seperator {
     width: 5px;
     padding: 0 16px;
     margin-top: 15px;
-    font-size: 1.1em;
-  }
-  .nav > li > a {
-    padding: 10px 10px;
-  }
-  .social {
-    position: relative;
-    top: 32px;
-  }
-  .social #social-icons {
-    list-style: none;
-    margin-top: 15px;
-  }
-  .social #social-icons li {
-    display: inline-block;
-    padding: 0px 5px;
-  }
-  .social #social-icons li .fa {
-    font-size: 1.3em;
-    padding: 5px;
   }
 }
-
-/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=../maps/style.css.map */
