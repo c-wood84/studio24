@@ -1,25 +1,25 @@
 
 jQuery(function($) {
 
-  $('body').scrollspy({
-    target: '#stickyheader',
-    offset: 40
-  });
+  // $('body').scrollspy({
+  //   target: '#stickyheader',
+  //   offset: 40
+  // });
 
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
   
-    var scrollVar = $(window).scrollTop();
+  //   var scrollVar = $(window).scrollTop();
   
-    if (scrollVar > 150) {
-      $('#stickyheader').addClass('sticky');
+  //   if (scrollVar > 150) {
+  //     $('#stickyheader').addClass('sticky');
       
-    }
+  //   }
   
-    if (scrollVar < 151) {
-      $('#stickyheader').removeClass('sticky');
+  //   if (scrollVar < 151) {
+  //     $('#stickyheader').removeClass('sticky');
      
-    }
-  });
+  //   }
+  // });
 
  
 

@@ -31,6 +31,12 @@ $soundcloud: #ff3a00;
 $primary: $teal;
 $secondary: $grey;
 
+//Other Fonts
+$lato-font: 'Lato', sans-serif;
+$abril-font: 'Abril Fatface', cursive;
+$ubuntu-font: 'Ubuntu', sans-serif;
+$droid-font: 'Droid Sans', sans-serif;
+
 //Font Weight
 $light: 300;
 $normal: normal;
@@ -39,10 +45,12 @@ $thick: bold;
 $thicker: 900;
 
 //Typography
-$font-heading: 'Josefin Sans', sans-serif;
+$font-heading: $lato-font;
 $font-main: helvetica, sans-serif;
 $font-weight: $normal;
 $heading-weight: $thick;
+
+
 
 //Font Sizes
 $text-h1:3rem;

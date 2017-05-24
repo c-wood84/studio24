@@ -1,3 +1,51 @@
+<?php
+    if (isset($_POST["submit"])) {
+        $name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $human = intval($_POST['human']);
+        $from = 'Studio24 Contact Form'; 
+        $to = 'roxane@studio24.photography'; 
+        $subject = 'Message from Studio24 Contact Form ';
+        
+        $body ="From: $name\n Phone: $phone\n E-Mail: $email\n Message:\n $message";
+
+        // Check if name has been entered
+        if (!$_POST['name']) {
+            $errName = 'Please enter your name';
+        }
+
+        //check if phone number has been entered
+        if (!$_POST['phone']) {
+            $errPhone = 'Please enter your phone number';
+        }
+        
+        // Check if email has been entered and is valid
+        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errEmail = 'Please enter a valid email address';
+        }
+
+        //Check if message has been entered
+        if (!$_POST['message']) {
+            $errMessage = 'Please enter your message';
+        }
+        //Check if simple anti-bot test is correct
+        if ($human !== 5) {
+            $errHuman = 'Your anti-spam is incorrect';
+        }
+
+// If there are no errors, send the email
+if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
+    if (mail ($to, $subject, $body, $from)) {
+        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+    } else {
+        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+    }
+}
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,6 +154,7 @@
                 <a href="" target="_blank" class="badge mobile-social pintrest" alt="Pintrest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a><!-- pintrest -->
             </div><!-- social icons -->
         </div><!-- navigation -->
+
     </div><!-- container -->
 </header><!-- header -->
 
@@ -250,46 +299,44 @@
             <div class="dotted-line">
                 <h3>Reach Out!</h3>
                 <p>If you are wanting to reach me for a possible quote on a project, wanting to get in touch or just have a general question? please fill out the form and I can back to you.</p>
-                <form id="contactForm" class="form" action="php/index.php">
+                <form id="contactForm" role="form" class="form" method="post" action="index.php">
                     <div class="form-group">
                         <label class="sr-only" for="contact-full-name">Name<span class="required">*</span></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Please Enter Your Name" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Please Enter Your Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                        <?php echo "<p class='text-danger'>$errName</p>";?>
                     </div><!-- form group -->
 
                     <div class="form-group">
                         <label class="sr-only" for="contact-phone">Phone<span class="required">*</span></label>
-                        <input type="Phone" class="form-control" id="phone" name="phone" placeholder="Please Enter Your Phone Number" required>
+                        <input type="Phone" class="form-control" id="phone" name="phone" placeholder="Please Enter Your Phone Number" value="<?php echo htmlspecialchars($_POST['phone']); ?>">
+                        <?php echo "<p class='text-danger'>$errPhone</p>";?>
                     </div><!-- form group -->
 
                     <div class="form-group">
                         <label class="sr-only" for="contact-email">E-mail<span class="required">*</span></label>
-                        <input type="E-mail" class="form-control" id="email" name="email" placeholder="Please Enter Your E-mail" required="true">
+                        <input type="E-mail" class="form-control" id="email" name="email" placeholder="Please Enter Your E-mail" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                        <?php echo "<p class='text-danger'>$errEmail</p>";?>
                     </div><!-- form group -->
 
                     <div class="form-group">
-                        <label class="sr-only " for="contact-purpose">Reason for Contact <span class="required">*</span></label>
-                        <select name="contact-reason" class="form-control" id="reason" name="reason">
-                            <option value="">--Please Select One--</option>
-                            <option value="get in touch">Get in Touch</option>
-                            <option value="general questions">General Questions</option>
-                            <option value="request quote">Request a Quote</option>
-                        </select>
+                        <label class="sr-only" for="contact-purpose">Message </label>
+                        <textarea class="form-control" id="message" name="message" cols="30" rows="5" placeholder="Leave a message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                        <?php echo "<p class='text-danger'>$errMessage</p>";?>
                     </div><!-- form group -->
+
                     <div class="form-group">
-                        <label class="sr-only " for="contact-purpose">Comments </label>
-                        <textarea class="form-control" id="comments" name="comments" cols="30" rows="5" placeholder="Leave a comment"></textarea>
-                        <!-- <?php echo "<p class='text-danger'>$errComments</p>";?> -->
+                        <label class="sr-only" for="contact-human">2 + 3 = ?</label>
+                        <input type="text" class="form-control" id="human" name="human" placeholder="2 + 3 = ?">
+                        <?php echo "<p class='text-danger'>$errHuman</p>";?>
                     </div><!-- form group -->
                         
                     <div class="form-group">
-                        <input type="submit" class="btn btn-24 btn-contact" value="Send">
+                        <input id="submit" name="submit" type="submit" class="btn btn-24 btn-contact" value="Send">
                     </div><!-- form group -->
 
                     <div class="form-group">
-                        <!-- <?php echo $result; ?> -->
+                        <?php echo $result; ?>
                     </div><!-- form group -->   
-
-
                 </form><!-- form -->
             </div><!-- dotted line -->
         </div>
@@ -330,12 +377,9 @@
   
 
 
-    <!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
+  <!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-
-    <!-- form validation -->
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 
 
     <script type="text/javascript" src="js/main.js"></script>

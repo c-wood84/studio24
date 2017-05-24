@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-weight: bold;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
@@ -154,6 +155,11 @@ blockquote {
 
 .nav > li > a {
   padding: 10px 15px;
+}
+
+/*********** Global Form Styles *************/
+.alert {
+  width: 92%;
 }
 
 /* ==== Custom Mobile Hamburger ==== */
@@ -314,8 +320,13 @@ blockquote {
   background: #fff;
   border-bottom: 3px solid #02c8d8;
   width: 100%;
+  height: 95px;
   z-index: 100;
   padding: 5px 10px;
+}
+
+#header-sticky .active {
+  border-bottom: 4px solid #02c8d8;
 }
 
 #header-sticky .navbar-wrapper {
@@ -455,9 +466,30 @@ section {
   margin: 20px 0 30px;
   color: #2a2a2a;
   padding-bottom: 5px;
-  border-bottom: 3px solid #02c8d8;
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+/* === GALLERY PAGES === */
+#gallery {
+  background: #fff;
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5px;
+  -moz-column-gap: 0px;
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+}
+
+#gallery .row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /* ==== PHOTOGRAPHY GALLERY ==== */
@@ -547,6 +579,10 @@ section {
   line-height: 2.2rem;
 }
 
+#contact .text-danger {
+  color: #a94442;
+}
+
 #contact .contact-info ul {
   list-style: none;
 }
@@ -576,36 +612,6 @@ footer {
   background: #2a2a2a;
   color: #a8a8a8;
   padding: 10px 5px;
-}
-
-/* ==== GALLERY ==== */
-#gallery {
-  background: #fff;
-}
-
-#gallery ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-flow: dense;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#gallery .grid-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#gallery .grid-wide {
-  -ms-grid-column: span 3;
-  grid-column: span 3;
-  -ms-grid-row: span 2;
-  grid-row: span 2;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -649,6 +655,9 @@ footer {
     width: 5px;
     padding: 0 16px;
     margin-top: 15px;
+  }
+  #gallery-showcase #print-pod h3 {
+    right: 15px;
   }
 }
 

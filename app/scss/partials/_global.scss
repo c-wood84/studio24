@@ -8,6 +8,7 @@
 h1,h2,h3,h4,h5,h6 {
 	@include sexy-text;
 	font-weight: $thick;
+	font-family: $font-heading;
 }
 
 h1 {
@@ -143,6 +144,14 @@ blockquote {
 	padding: 10px 15px;
 
 }
+
+
+
+/*********** Global Form Styles *************/
+.alert {
+	width: 92%;
+}
+
 
 @import 'partials/_mobile-hamburger.scss';
 
