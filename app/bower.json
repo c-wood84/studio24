@@ -23,7 +23,6 @@
     "bootstrap": "^3.3.6",
     "animate.css": "^3.5.1",
     "font-awesome": "^4.6.3",
-    "masonry": "^4.1.0",
     "breakpoint-sass": "^2.7.1"
   }
 }

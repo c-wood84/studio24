@@ -213,15 +213,15 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
         </div><!-- section header -->
     <div class="row">
             <div id="gallery-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Gallery</a></h3>
+                <h3><a href="gallery.html">Gallery</a></h3>
             </div><!-- gallery pod -->
 
             <div id="panoramic-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Panoramic</a></h3>
+                <h3><a href="panoramic.html">Panoramic</a></h3>
             </div><!-- panoramic pod -->
 
             <div id="print-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Print</a></h3>
+                <h3><a href="print.html">Print</a></h3>
             </div><!-- print pod -->
     </div><!-- row -->
 </section><!-- gallery showcase -->

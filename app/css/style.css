@@ -313,6 +313,251 @@ blockquote {
   background-color: #cb2027;
 }
 
+/* Load Images for Image gallery */
+#gallery-1 {
+  background: url("../images/gallery/AcadiaNationalPark.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-2 {
+  background: url("../images/gallery/ChesapeakeBaySunset.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-3 {
+  background: url("../images/gallery/CoastGuardBeach.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-4 {
+  background: url("../images/gallery/CoastGuardBeachStation.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-5 {
+  background: url("../images/gallery/CoastGuardSurf_01.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-6 {
+  background: url("../images/gallery/CoastGuardSurf_02.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-7 {
+  background: url("../images/gallery/CoastGuardSurf_04.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-8 {
+  background: url("../images/gallery/CoastGuardSurf_05.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-9 {
+  background: url("../images/gallery/CoastGuardSurf_06.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-10 {
+  background: url("../images/gallery/CoastGuardSurf_07.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-11 {
+  background: url("../images/gallery/CoastGuardSurf_08.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-12 {
+  background: url("../images/gallery/CoastGuradSurf_03.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-13 {
+  background: url("../images/gallery/EiffelTower_01.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-14 {
+  background: url("../images/gallery/EiffelTower_1472.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-15 {
+  background: url("../images/gallery/FalmouthSunset.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-16 {
+  background: url("../images/gallery/FeedingFrenzy.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-17 {
+  background: url("../images/gallery/Gravity_Fruit.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-18 {
+  background: url("../images/gallery/LongTrail_VT.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-19 {
+  background: url("../images/gallery/Maine_7234.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-20 {
+  background: url("../images/gallery/Maine_Waterfall.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-21 {
+  background: url("../images/gallery/AcadiaNationalPark.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-22 {
+  background: url("../images/gallery/MarshesMagothyBay_0140.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-23 {
+  background: url("../images/gallery/MarshesMagothyBay_0143.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-24 {
+  background: url("../images/gallery/MushroomSpohrGardens_01.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-25 {
+  background: url("../images/gallery/MushroomSpohrGardens_02.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-26 {
+  background: url("../images/gallery/MushroomSpohrGardens_6877.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-27 {
+  background: url("../images/gallery/MushroomSpohrGardens.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-28 {
+  background: url("../images/gallery/Nobska-20x30.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-29 {
+  background: url("../images/gallery/Osteospermum-leftquarter.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-30 {
+  background: url("../images/gallery/Osteospermum-rightquarter.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-31 {
+  background: url("../images/gallery/Osteospermum.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-32 {
+  background: url("../images/gallery/Paris.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-33 {
+  background: url("../images/gallery/Sailboat.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-34 {
+  background: url("../images/gallery/ScenicPanoRangeleyME.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-35 {
+  background: url("../images/gallery/Serenity.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-36 {
+  background: url("../images/gallery/SkyView.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-37 {
+  background: url("../images/gallery/SunBathingSeals_02.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-38 {
+  background: url("../images/gallery/SunBathingSeals.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-39 {
+  background: url("../images/gallery/SunsetFalmouth.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#gallery-40 {
+  background: url("../images/gallery/Surfboards_01.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* ==== Navigation Header ==== */
 #header-sticky {
   position: fixed;
@@ -471,25 +716,44 @@ section {
 }
 
 /* === GALLERY PAGES === */
-#gallery {
-  background: #fff;
-  line-height: 0;
-  -webkit-column-count: 5;
-  -webkit-column-gap: 0px;
-  -moz-column-count: 5px;
-  -moz-column-gap: 0px;
-  -webkit-column-count: 5;
-  -moz-column-count: 5;
-  column-count: 5;
-  -webkit-column-gap: 0px;
-  -moz-column-gap: 0px;
-  column-gap: 0px;
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-#gallery .row img {
+.grid img {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-item {
+  float: left;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #333;
+}
+
+.grid-object {
+  background-size: cover;
+  object-fit: cover;
+}
+
+.grid-item--width2 {
+  width: 650px;
+}
+
+.grid-item--height2 {
+  height: 500px;
 }
 
 /* ==== PHOTOGRAPHY GALLERY ==== */

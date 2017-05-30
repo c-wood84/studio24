@@ -3,8 +3,9 @@
 @import 'partials/_general.scss';
 @import 'partials/_global.scss';
 @import 'partials/_mobile-nav.scss';
+@import 'partials/_gallery-images.scss';
 
-
+* { box-sizing: border-box; }
 /* ==== Navigation Header ==== */
 #header-sticky {
 	position: fixed;
@@ -157,28 +158,58 @@ section {
 
 /* === GALLERY PAGES === */
 #gallery {
-	background: $white;
-	line-height: 0;
-	-webkit-column-count:5;
-	-webkit-column-gap:0px;
-	-moz-column-count:5px;
-	-moz-column-gap:0px;
-	column-count:5;
-	column-gap:0px;
+	// background: $white;
+	// line-height: 0;
+	// -webkit-column-count:5;
+	// -webkit-column-gap:0px;
+	// -moz-column-count:5px;
+	// -moz-column-gap:0px;
+	// column-count:5;
+	// column-gap:0px;
 	.row {
 
 
-		img {
-			// display: block;
+		
+	}	
+}
+
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+img {
+			display: block;
 			width: 100%;
 			height: auto;
 			-o-object-fit:cover;
 			object-fit:cover;
 		}
 
-	}
-	
+
 }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #333;
+
+}
+
+.grid-object {
+	@include image-grid-item;
+}
+
+.grid-item--width2 { width: 650px; }
+.grid-item--height2 { height: 500px; }
 
 
 /* ==== PHOTOGRAPHY GALLERY ==== */

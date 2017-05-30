@@ -12,6 +12,12 @@
 	-moz-border-radius:50%;
 }
 
+@mixin image-grid-item {
+	background-size: cover;
+	-o-object-fit:cover;
+	object-fit:cover;
+}
+
 @mixin top-shadow {
 
 }
