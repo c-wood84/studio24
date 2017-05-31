@@ -17,9 +17,7 @@
 	z-index: 100;
 	padding: 5px 10px;
 
-	.active {
-		border-bottom:4px solid $teal;
-	}
+	
 	.navbar-wrapper {
 		padding: 0;
 	}
@@ -54,6 +52,10 @@
 				a:hover {
 					color: $grey;
 				}
+
+				.active  a:link, a:visited {
+					color: $teal;
+	}
 			}
 }
 
@@ -141,18 +143,51 @@
 /* ==== LAYOUT ==== */
 section {
 	padding: 50px 0;
+	background: $light-grey;
 }
 
 .section-header {
 	text-align: center;
+	margin:10px 0;
 }
 
 .section-header h2 {
-	margin: 20px 0 30px;
 	color: $black;
-	padding-bottom: 5px;
 	text-transform: uppercase;
 	font-size: $text-h1;
+}
+
+.sub-text {
+	font-size: $small-text;
+	color: $grey;
+}
+
+.center-line {
+	height:2px;
+	width:50px;
+	background: $teal;
+	position: relative;
+	margin:auto;
+	margin-top: 5px;
+
+}
+
+.content-shell {
+	background: $white;
+
+	.about-img {
+		width:150px;
+		height: 150px;
+		border-radius: 50%;
+
+
+	}
+}
+
+
+/* ==== ABOUT SECTION ==== */
+#about {
+	background: $white;
 }
 
 
@@ -216,8 +251,8 @@ img {
 #gallery-showcase {
 	width: 100%;
 	height: auto;
-	background: $white;
-	padding: 0;
+	
+	padding: 10px 0;
 	margin: 0;
 	.image-pod {
 		height: 300px;
@@ -277,7 +312,7 @@ img {
 	background: url('../images/contact-bg-stock.jpg') center fixed;
 	background-position: 0;
 	background-size: cover;
-	padding: 0;
+	padding: 0 0 10px 0;
 	min-height: 450px;
 
 	.section-header h2 {

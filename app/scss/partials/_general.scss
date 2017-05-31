@@ -4,5 +4,15 @@ body {
 	background: $white;
 	font-family: $font-main;
 	font-style: normal;
+	@include sexy-text;
 }
+
+.blog {
+	
+		padding-top: 70px;
+	
+}
+
+
+
 

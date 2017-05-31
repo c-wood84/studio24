@@ -26,6 +26,10 @@
 
 }
 
-@mixin transition {}
+@mixin transition {
+	-webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
 
 

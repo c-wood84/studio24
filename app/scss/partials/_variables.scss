@@ -3,6 +3,7 @@ $white: #fff;
 $black: #2a2a2a;
 $teal: #02c8d8;
 $grey: #a8a8a8;
+$light-grey: #f8f8f8;
 
 
 /* SASS / Social Media Brand Colors */
@@ -45,8 +46,7 @@ $thick: bold;
 $thicker: 900;
 
 //Typography
-$font-heading: $lato-font;
-$font-main: helvetica, sans-serif;
+$font-main: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-weight: $normal;
 $heading-weight: $thick;
 
@@ -57,9 +57,10 @@ $text-h1:3rem;
 $text-h2:2.5rem;
 $text-h3:2rem;
 $text-h4:1.75rem;
-$text-nav:1.3rem;
+$text-nav:1.4rem;
 $text-p: 13px;
 $line-height: 1.4em;
+$small-text: 1.2rem;
 
 $main-heading: $text-h1;
 $section-headings: $text-h2;

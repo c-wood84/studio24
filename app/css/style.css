@@ -2,8 +2,14 @@
 /* === General Styles === */
 body {
   background: #fff;
-  font-family: helvetica, sans-serif;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.blog {
+  padding-top: 70px;
 }
 
 /* === Global Styles === */
@@ -15,8 +21,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-weight: bold;
-  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -81,6 +87,7 @@ button, input, select, .btn, a.btn {
 
 .btn-24:hover {
   background: #02c8d8;
+  transition: all 0.6s ease;
 }
 
 blockquote {
@@ -157,6 +164,10 @@ blockquote {
   padding: 10px 15px;
 }
 
+.hvr-shutter-in-horizontal:before {
+  opacity: 0.2;
+}
+
 /*********** Global Form Styles *************/
 .alert {
   width: 92%;
@@ -207,8 +218,6 @@ blockquote {
   display: none;
 }
 
-/********* Mobile Icons /*********/
-/********* Mobile Navigation /*********/
 .mobile-logo {
   text-align: center;
   border-bottom: 2px solid #02c8d8;
@@ -570,10 +579,6 @@ blockquote {
   padding: 5px 10px;
 }
 
-#header-sticky .active {
-  border-bottom: 4px solid #02c8d8;
-}
-
 #header-sticky .navbar-wrapper {
   padding: 0;
 }
@@ -592,7 +597,7 @@ blockquote {
 
 #header-sticky .main-nav li {
   padding: 5px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: normal;
   display: inline-block;
   letter-spacing: 1px;
@@ -607,6 +612,10 @@ blockquote {
 
 #header-sticky .main-nav a:hover {
   color: #a8a8a8;
+}
+
+#header-sticky .main-nav .active a:link, #header-sticky .main-nav a:visited {
+  color: #02c8d8;
 }
 
 /* ==== Header Social Icons ==== */
@@ -701,18 +710,47 @@ blockquote {
 /* ==== LAYOUT ==== */
 section {
   padding: 50px 0;
+  background: #f8f8f8;
 }
 
 .section-header {
   text-align: center;
+  margin: 10px 0;
 }
 
 .section-header h2 {
-  margin: 20px 0 30px;
   color: #2a2a2a;
-  padding-bottom: 5px;
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+.sub-text {
+  font-size: 1.2rem;
+  color: #a8a8a8;
+}
+
+.center-line {
+  height: 2px;
+  width: 50px;
+  background: #02c8d8;
+  position: relative;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.content-shell {
+  background: #fff;
+}
+
+.content-shell .about-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* ==== ABOUT SECTION ==== */
+#about {
+  background: #fff;
 }
 
 /* === GALLERY PAGES === */
@@ -760,8 +798,7 @@ section {
 #gallery-showcase {
   width: 100%;
   height: auto;
-  background: #fff;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -819,7 +856,7 @@ section {
   background: url("../images/contact-bg-stock.jpg") center fixed;
   background-position: 0;
   background-size: cover;
-  padding: 0;
+  padding: 0 0 10px 0;
   min-height: 450px;
 }
 

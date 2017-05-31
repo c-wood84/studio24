@@ -35,7 +35,7 @@
         <!-- site style css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body style="padding-top: 70px;">
+<body class="blog">
 
 <!-- Fade in Navigation for tablet, notebook, and desktop -->
 <header id="header-sticky" class="animated fadeInDown site-header hidden-xs" role="banner">
@@ -47,13 +47,13 @@
                 </div><!-- navbar header -->
                 <div id="nav" class="hidden-xs col-sm-6 col-md-6 col-lg-6 main-nav">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="seperator">/</li>
                         <li><a href="#">About</a></li>
                         <li class="seperator">/</li>
                         <li><a href="#">Photography</a></li>
                         <li class="seperator">/</li>
-                        <li><a href="#">Blog</a></li>
+                        <li class="active"><a href="#">Blog</a></li>
                         <li class="seperator">/</li>
                         <li><a href="#">Contact</a></li>
                     </ul><!-- nav -->
@@ -111,30 +111,90 @@
 </header><!-- header -->
 
 
-<!-- GALLERY -->
-<section id="gallery">
+<section id="blog">
     <div class="container">
         <div class="section-header">
-            <div class="head-text"><h2>Print</h2></div>    
+            <div class="head-text"><h2>Blog</h2></div>    
             <!-- <div class="sub-text">dddddddd</div> -->
             <div class="center-line"></div>
         </div><!-- section header -->
 
+        <div class="row" id="primary" role="main">
+            <main id="content" class="col-sm-8">
+                <article class="post">
+                    <header>
+                        <h3><a href="#">Blog Title Here</a></h3>
+                        <div class="post-details">
+                            <i class="fa fa-user" aria-hidden="true"></i> Wesley Chitwood
+                            <i class="fa fa-calendar" aria-hidden="true"></i> <time>June 1, 2017</time>
+                            <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="">folder 1</a>, <a href="">folder 2</a>
+                            <i class="fa fa-tag" aria-hidden="true"></i> Tagged <a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a>, <a href="">Tag 4</a>
 
-       <!--  <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Gallery</li>
-            <li class="breadcrumb-item"><a href="#">Panoramic</a></li>
-            <li class="breadcrumb-item"><a href="#">Print</a></li>
-        </ol> -->
+                            <div class="post-comments">
+                                <a href=""><i class="fa fa-comment" aria-hidden="true"></i>160</a>
+                            </div>
+                        </div><!-- post details -->
+                    </header>
+                    <div class="post-image">
+                        <img src="" alt="">
+                    </div><!-- post image -->
+                    <div class="post-excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iac... <a href="">continue reading &raquo;</a>  </p>
+                    </div><!-- post excerpt -->
+                </article><!-- post -->
+
+                <article class="post">
+                    <header>
+                        <h3><a href="#">Blog Title Here</a></h3>
+                        <div class="post-details">
+                            <i class="fa fa-user" aria-hidden="true"></i> Wesley Chitwood
+                            <i class="fa fa-calendar" aria-hidden="true"></i> <time>June 1, 2017</time>
+                            <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="">folder 1</a>, <a href="">folder 2</a>
+                            <i class="fa fa-tag" aria-hidden="true"></i> Tagged <a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a>, <a href="">Tag 4</a>
+
+                            <div class="post-comments">
+                                <a href=""><i class="fa fa-comment" aria-hidden="true"></i>160</a>
+                            </div>
+                        </div><!-- post details -->
+                    </header>
+                    <div class="post-image">
+                        <img src="" alt="">
+                    </div><!-- post image -->
+                    <div class="post-excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iac... <a href="">continue reading &raquo;</a>  </p>
+                    </div><!-- post excerpt -->
+                </article><!-- post -->
+
+                <article class="post">
+                    <header>
+                        <h3><a href="#">Blog Title Here</a></h3>
+                        <div class="post-details">
+                            <i class="fa fa-user" aria-hidden="true"></i> Wesley Chitwood
+                            <i class="fa fa-calendar" aria-hidden="true"></i> <time>June 1, 2017</time>
+                            <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="">folder 1</a>, <a href="">folder 2</a>
+                            <i class="fa fa-tag" aria-hidden="true"></i> Tagged <a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a>, <a href="">Tag 4</a>
+
+                            <div class="post-comments">
+                                <a href=""><i class="fa fa-comment" aria-hidden="true"></i>160</a>
+                            </div>
+                        </div><!-- post details -->
+                    </header>
+                    <div class="post-image">
+                        <img src="" alt="">
+                    </div><!-- post image -->
+                    <div class="post-excerpt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iac... <a href="">continue reading &raquo;</a>  </p>
+                    </div><!-- post excerpt -->
+                </article><!-- post -->
+
+            </main><!-- content -->
+
+        </div>
+
+
         
     </div><!-- container -->
-    <div class="grid">
-
-        <h1>Coming Soon!</h1>
-        
-    </div><!-- grid -->    
-</section><!-- section (gallery) -->
-
+</section><!-- blog -->
 
 
 
@@ -156,7 +216,8 @@
     </div><!-- container -->
 </footer><!-- footer -->
 
-    
+  
+
   <!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

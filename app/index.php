@@ -190,8 +190,12 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
 <section id="about">
     <div class="container">
         <div class="section-header">
-            <h2>About</h2>
+            <div class="head-text"><h2>Photography Gallery</h2></div>    
+            <!-- <div class="sub-text">dddddddd</div> -->
+            <div class="center-line"></div>
         </div><!-- section header -->
+
+
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
 
@@ -209,8 +213,11 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
 
 <section id="gallery-showcase">
     <div class="section-header">
-            <h2>Photography Gallery</h2>
-        </div><!-- section header -->
+        <div class="head-text"><h2>Photography Gallery</h2></div>    
+        <!-- <div class="sub-text">dddddddd</div> -->
+        <div class="center-line"></div>
+    </div><!-- section header -->
+
     <div class="row">
             <div id="gallery-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
                 <h3><a href="gallery.html">Gallery</a></h3>
@@ -226,58 +233,15 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
     </div><!-- row -->
 </section><!-- gallery showcase -->
 
-<!-- feedback -->
-<section id="feedback">
-    <div class="container">
-        <div class="section-header">
-            <h2>Feedback</h2>
-        </div><!-- section header -->
-        <div class="row">
 
-            <!-- testimony -->
-            <div class="row testimonial">
-                <div class="hidden-xs col-sm-2 col-sm-offset-1">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i>
-                </div><!-- col -->
-                <div class="col-xs-12 col-sm-9">
-                    <blockquote>
-                        Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
-                    </blockquote>
-                </div><!-- col -->
-            </div><!-- testimony -->
-
-            <!-- testimony -->
-            <div class="row testimonial">
-                <div class="hidden-xs col-sm-2 col-sm-offset-1">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i>
-                </div><!-- col -->
-                <div class="col-xs-12 col-sm-9">
-                    <blockquote>
-                        Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
-                    </blockquote>
-                </div><!-- col -->
-            </div><!-- testimony -->
-
-            <!-- testimony -->
-            <div class="row testimonial">
-                <div class="hidden-xs col-sm-2 col-sm-offset-1">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i>
-                </div><!-- col -->
-                <div class="col-xs-12 col-sm-9">
-                    <blockquote>
-                        Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
-                    </blockquote>
-                </div><!-- col -->
-            </div><!-- testimony -->
-        </div><!-- row -->
-    </div><!-- container -->
-</section><!-- feedback -->
 
 
 <section id="blog">
         <div class="container">
             <div class="section-header">
-                <h2>Blog</h2>
+                <div class="head-text"><h2>Recent Post</h2></div>    
+                <!-- <div class="sub-text">dddddddd</div> -->
+                <div class="center-line"></div>
             </div><!-- section header -->
                 <div class="row">
                         Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
@@ -290,13 +254,13 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
 <section id="contact" data-type="background" data-speed="4">
         <div class="container">
             <div class="section-header">
-                <h2>Contact</h2>
+                <div class="head-text"><h2>Contact</h2></div>    
+                <!-- <div class="sub-text">dddddddd</div> -->
+                <div class="center-line"></div>
             </div><!-- section header -->
 
-
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-1 contact-form">
-            <div class="dotted-line">
+            <div class="col-sm-5 col-sm-offset-1 contact-form dotted-line">
                 <h3>Reach Out!</h3>
                 <p>If you are wanting to reach me for a possible quote on a project, wanting to get in touch or just have a general question? please fill out the form and I can back to you.</p>
                 <form id="contactForm" role="form" class="form" method="post" action="index.php">
@@ -338,7 +302,6 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
                         <?php echo $result; ?>
                     </div><!-- form group -->   
                 </form><!-- form -->
-            </div><!-- dotted line -->
         </div>
             <div class="col-sm-3 col-sm-offset-1 contact-info">
                 <h3>Where Are We?</h3>
