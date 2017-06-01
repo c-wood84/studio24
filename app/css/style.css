@@ -108,34 +108,40 @@ blockquote {
   color: #fff;
   padding: 0;
   margin: 0 5px 20px 0;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   text-align: center;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
 }
 
 .badge.social.facebook:hover {
   background-color: #3b5998;
+  transition: all 0.6s ease;
 }
 
 .badge.social.twitter:hover {
   background-color: #00aced;
+  transition: all 0.6s ease;
 }
 
 .badge.social.linked-in:hover {
   background-color: #007bb6;
+  transition: all 0.6s ease;
 }
 
 .badge.social.instagram:hover {
   background-color: #bc2a8d;
+  transition: all 0.6s ease;
 }
 
 .badge.social.gplus:hover {
   background-color: #dd4b39;
+  transition: all 0.6s ease;
 }
 
 .badge.social.pintrest:hover {
   background-color: #cb2027;
+  transition: all 0.6s ease;
 }
 
 .form-control {
@@ -289,12 +295,10 @@ blockquote {
   height: 30px;
   font-size: 17px;
   line-height: 32px;
-  padding: 0;
-  margin: 0 5px 20px 0;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   text-align: center;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   color: #fff;
 }
 
@@ -738,19 +742,33 @@ section {
   margin-top: 5px;
 }
 
-.content-shell {
-  background: #fff;
+#primary {
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
-.content-shell .about-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.content-shell {
+  background: #fff;
 }
 
 /* ==== ABOUT SECTION ==== */
 #about {
   background: #fff;
+}
+
+#about .about-img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+#about .about-img img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  text-align: center;
 }
 
 /* === GALLERY PAGES === */
@@ -851,6 +869,7 @@ section {
   padding: 7px;
 }
 
+/* ==== RECENT POST ==== */
 /* ==== CONTACT ==== */
 #contact {
   background: url("../images/contact-bg-stock.jpg") center fixed;
@@ -913,6 +932,83 @@ footer {
   background: #2a2a2a;
   color: #a8a8a8;
   padding: 10px 5px;
+}
+
+/* ==== BLOG ==== */
+.post {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+  /* ==== BLOG COMMENTS ==== */
+}
+
+.post header, .post .post-excerpt {
+  padding: 20px;
+}
+
+.post header h3, .post header h1 {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post header h1 {
+  font-size: 24px;
+}
+
+.post .post-image {
+  height: auto;
+}
+
+.post .post-details {
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.post .post-details i.fa {
+  padding-left: 10px;
+  padding-right: 2px;
+}
+
+.post .post-details i.fa:first-child {
+  padding-left: 0;
+}
+
+.post .post-comments-badge {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  text-align: center;
+  background: #02c8d8;
+  display: table;
+}
+
+.post .post-comments-badge a {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+}
+
+.post .post-comments-badge i.fa {
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.post .post-comments-badge:hover {
+  background: #a8a8a8;
+  transition: all 0.6s ease;
 }
 
 /* Small devices (tablets, 768px and up) */

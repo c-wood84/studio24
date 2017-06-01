@@ -306,7 +306,7 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
             <div class="col-sm-3 col-sm-offset-1 contact-info">
                 <h3>Where Are We?</h3>
                     <ul>
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Hyannis, MA</li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Falmouth, MA</li>
                         <li><i class="fa fa-phone" aria-hidden="true"></i> <a tel="5082960557">508.296.0557</a></li>
                         <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:roxane@studio24.photography">roxane@studio24.photography</a></li>
                     </ul>

@@ -72,7 +72,7 @@ button, input, select, .btn, a.btn {
 
 .btn-24:hover {
 	background: $studio24-btn-hover;
-	@include transition;
+	@include hover-transition;
 }
 
 blockquote {
@@ -92,31 +92,39 @@ blockquote {
 	height: 35px;
 	line-height: 37px;
 	color: $white;
+	padding: 0;
+	margin: 0 5px 20px 0;
 	@include circle;
 }
 
 .badge.social.facebook:hover {
 	background-color: $facebook;
+	@include hover-transition;
 }
 
 .badge.social.twitter:hover {
 	background-color: $twitter;
+	@include hover-transition;
 }
 
 .badge.social.linked-in:hover {
 	background-color: $linkedin;
+	@include hover-transition;
 }
 
 .badge.social.instagram:hover {
 	background-color: $instagram;
+	@include hover-transition;
 }
 
 .badge.social.gplus:hover {
 	background-color: $googleplus;
+	@include hover-transition;
 }
 
 .badge.social.pintrest:hover {
 	background-color: $pinterest;
+	@include hover-transition;
 }
 
 .form-control {

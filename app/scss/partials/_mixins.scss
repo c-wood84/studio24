@@ -3,13 +3,15 @@
 	text-rendering: optimizeLegibility;
 }
 
-@mixin circle {
-	padding: 0;
-	margin: 0 5px 20px 0;
+@mixin circle {	
+	border-radius: 100%;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
 	text-align: center;
-	border-radius: 50%;
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
+}
+
+@mixin badge {
+
 }
 
 @mixin image-grid-item {
@@ -26,10 +28,16 @@
 
 }
 
-@mixin transition {
+@mixin hover-transition {
 	-webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease;
+}
+
+@mixin blog-heading {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: 1px solid $border-grey;
 }
 
 
