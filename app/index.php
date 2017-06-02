@@ -190,24 +190,28 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
 <section id="about">
     <div class="container">
         <div class="section-header">
-            <div class="head-text"><h2>Photography Gallery</h2></div>    
+            <div class="head-text"><h2>About</h2></div>    
             <!-- <div class="sub-text">dddddddd</div> -->
             <div class="center-line"></div>
         </div><!-- section header -->
+
+        <div class="about-img">
+            <img src="images/studio24-about-img.jpg" alt="">
+        </div>
 
 
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
 
-        <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
+            <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
 
-        <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
+            <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
 
-        <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
+            <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
 
-        <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
+            <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
     </div>
 </section><!-- about -->
 
