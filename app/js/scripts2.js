@@ -30,7 +30,7 @@ jQuery(function($) {
     var $target = $(target);
 
     $('html, body').stop().animate({
-      'scrollTop': $target.offset().top - 77
+      'scrollTop': $target.offset().top - 45
     }, 980, 'swing', function() {
       window.location.hash = target;
     });
