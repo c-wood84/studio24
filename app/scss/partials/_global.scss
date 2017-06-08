@@ -1,9 +1,9 @@
 /* === Global Styles === */
 
-* {
-	margin: 0;
-	padding: 0;
-}
+// * {
+// 	margin: 0;
+// 	padding: 0;
+// }
 
 h1,h2,h3,h4,h5,h6 {
 	@include sexy-text;
@@ -37,6 +37,10 @@ p {
 
 p.lead {
 	font-weight: $normal;
+}
+
+span.required {
+	color: red;
 }
 
 a {
@@ -127,18 +131,6 @@ blockquote {
 	@include hover-transition;
 }
 
-.form-control {
-	background: $black;
-	border: 1px solid $grey;
-	color:$white;
-	height: 34px;
-	padding: 4px 8px;
-	border-radius: 0px;
-	-webkit-border-radius:0px;
-	-moz-border-radius:0px;
-	width: 92%;
-}
-
 .navbar-brand {
 	padding: 0 15px;
 }
@@ -160,11 +152,71 @@ blockquote {
 
 
 
-/*********** Global Form Styles *************/
+/* ==== FORMS ==== */
+label {
+	display: block;
+	font-weight: 500;
+}
+
+.form-control {
+	border-radius: 0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	height: 34px;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+textarea {
+	border-radius: 0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	border: 1px solid $grey;
+	padding: 4px 8px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+
+}
+
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	user-select:none;
+	background-image: none;
+	border: none;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius: 6px;
+	width: 20%;
+	background: $grey;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	background: $studio24-btn-hover;
+	@include hover-transition;
+
+}
+
 .alert {
 	width: 92%;
 }
-
 
 @import 'partials/_mobile-hamburger.scss';
 

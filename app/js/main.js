@@ -48,18 +48,6 @@ $(window).scrollTop();
 	} 
 
 	
-
-	//animated for scroll cue 
-	// if (scrollTop > 525) {
-
-	// 	$('#scrollCue').removeClass('fadeInDown');
-	// 	$('#scrollCue').addClass('fadeOutDown');
-		
-	// } else {
-	// 	$('#scrollCue').removeClass('fadeOutDown');
-	// 	$('#scrollCue').addClass('fadeInDown');
-	// } 
-
 	});
 
 	// Cache the Window object
@@ -85,6 +73,9 @@ $(window).scrollTop();
 			
 		}); // end window scroll
 	});
+
+
+	
 
 });
 

@@ -40,4 +40,14 @@
 	border-bottom: 1px solid $border-grey;
 }
 
+@mixin blog-post {
+	position: relative;
+	border: 1px solid $border-grey;
+	background: $white;
+	margin: 0 0 40px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius: 4px;
+}
+
 

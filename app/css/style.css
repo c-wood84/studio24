@@ -6,22 +6,22 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow: scroll;
 }
 
-.blog {
-  padding-top: 70px;
+.home {
+  padding-top: 125px;
+}
+
+.gallery {
+  padding-top: 125px;
 }
 
 /* === Global Styles === */
-* {
-  margin: 0;
-  padding: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-weight: 500;
+  font-weight: 400;
   font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -51,6 +51,10 @@ p {
 
 p.lead {
   font-weight: normal;
+}
+
+span.required {
+  color: red;
 }
 
 a {
@@ -144,18 +148,6 @@ blockquote {
   transition: all 0.6s ease;
 }
 
-.form-control {
-  background: #2a2a2a;
-  border: 1px solid #a8a8a8;
-  color: #fff;
-  height: 34px;
-  padding: 4px 8px;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  width: 92%;
-}
-
 .navbar-brand {
   padding: 0 15px;
 }
@@ -174,7 +166,63 @@ blockquote {
   opacity: 0.2;
 }
 
-/*********** Global Form Styles *************/
+/* ==== FORMS ==== */
+label {
+  display: block;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  height: 34px;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+textarea {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: 1px solid #a8a8a8;
+  padding: 4px 8px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: none;
+  border-radius: 6px;
+  width: 20%;
+  background: #a8a8a8;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background: #02c8d8;
+  transition: all 0.6s ease;
+}
+
 .alert {
   width: 92%;
 }
@@ -189,9 +237,8 @@ blockquote {
   position: relative;
   transition: all 500ms ease-in-out;
   background: #a8a8a8;
-  border-radius: 89%;
   height: 4px;
-  width: 40px;
+  width: 35px;
 }
 
 .navbar-toggle .icon-bar:nth-child(2) {
@@ -232,6 +279,15 @@ blockquote {
 .mobile-logo img {
   width: 30%;
   height: auto;
+}
+
+#mobile-fixednav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 180px;
+  background: #fff;
+  z-index: 5;
 }
 
 /****** Bootstrap Toggle Ovdride ********/
@@ -286,7 +342,7 @@ blockquote {
 }
 
 #social-icons i {
-  padding: 5px;
+  padding: 4px 0;
 }
 
 .badge.mobile-social {
@@ -294,7 +350,7 @@ blockquote {
   width: 30px;
   height: 30px;
   font-size: 17px;
-  line-height: 32px;
+  line-height: 17px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -324,247 +380,6 @@ blockquote {
 
 .badge.mobile-social.pintrest:hover {
   background-color: #cb2027;
-}
-
-/* Load Images for Image gallery */
-#gallery-1 {
-  background: url("../images/gallery/AcadiaNationalPark.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-2 {
-  background: url("../images/gallery/ChesapeakeBaySunset.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-3 {
-  background: url("../images/gallery/CoastGuardBeach.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-4 {
-  background: url("../images/gallery/CoastGuardBeachStation.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-5 {
-  background: url("../images/gallery/CoastGuardSurf_01.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-6 {
-  background: url("../images/gallery/CoastGuardSurf_02.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-7 {
-  background: url("../images/gallery/CoastGuardSurf_04.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-8 {
-  background: url("../images/gallery/CoastGuardSurf_05.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-9 {
-  background: url("../images/gallery/CoastGuardSurf_06.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-10 {
-  background: url("../images/gallery/CoastGuardSurf_07.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-11 {
-  background: url("../images/gallery/CoastGuardSurf_08.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-12 {
-  background: url("../images/gallery/CoastGuradSurf_03.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-13 {
-  background: url("../images/gallery/EiffelTower_01.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-14 {
-  background: url("../images/gallery/EiffelTower_1472.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-15 {
-  background: url("../images/gallery/FalmouthSunset.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-16 {
-  background: url("../images/gallery/FeedingFrenzy.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-17 {
-  background: url("../images/gallery/Gravity_Fruit.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-18 {
-  background: url("../images/gallery/LongTrail_VT.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-19 {
-  background: url("../images/gallery/Maine_7234.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-20 {
-  background: url("../images/gallery/Maine_Waterfall.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-21 {
-  background: url("../images/gallery/AcadiaNationalPark.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-22 {
-  background: url("../images/gallery/MarshesMagothyBay_0140.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-23 {
-  background: url("../images/gallery/MarshesMagothyBay_0143.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-24 {
-  background: url("../images/gallery/MushroomSpohrGardens_01.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-25 {
-  background: url("../images/gallery/MushroomSpohrGardens_02.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-26 {
-  background: url("../images/gallery/MushroomSpohrGardens_6877.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-27 {
-  background: url("../images/gallery/MushroomSpohrGardens.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-28 {
-  background: url("../images/gallery/Nobska-20x30.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-29 {
-  background: url("../images/gallery/Osteospermum-leftquarter.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-30 {
-  background: url("../images/gallery/Osteospermum-rightquarter.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-31 {
-  background: url("../images/gallery/Osteospermum.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-32 {
-  background: url("../images/gallery/Paris.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-33 {
-  background: url("../images/gallery/Sailboat.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-34 {
-  background: url("../images/gallery/ScenicPanoRangeleyME.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-35 {
-  background: url("../images/gallery/Serenity.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-36 {
-  background: url("../images/gallery/SkyView.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-37 {
-  background: url("../images/gallery/SunBathingSeals_02.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-38 {
-  background: url("../images/gallery/SunBathingSeals.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-39 {
-  background: url("../images/gallery/SunsetFalmouth.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
-}
-
-#gallery-40 {
-  background: url("../images/gallery/Surfboards_01.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover;
 }
 
 * {
@@ -618,7 +433,7 @@ blockquote {
   color: #a8a8a8;
 }
 
-#header-sticky .main-nav .active a:link, #header-sticky .main-nav a:visited {
+#header-sticky .main-nav .active a {
   color: #02c8d8;
 }
 
@@ -771,17 +586,24 @@ section {
   text-align: center;
 }
 
+#about .about-img-2 {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 0 10px 5px;
+}
+
+#about .about-img-2 img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  text-align: center;
+}
+
 /* === GALLERY PAGES === */
 .grid {
   max-width: 100%;
   margin: 0 auto;
-}
-
-.grid img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 /* clear fix */
@@ -794,9 +616,15 @@ section {
 /* ---- .grid-item ---- */
 .grid-item {
   float: left;
-  width: 300px;
-  height: 200px;
+  width: 100%;
   border: 1px solid #333;
+  height: 200px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .grid-object {
@@ -805,11 +633,17 @@ section {
 }
 
 .grid-item--width2 {
-  width: 650px;
+  width: 100%;
 }
 
 .grid-item--height2 {
-  height: 500px;
+  height: 200px;
+}
+
+.grid-item--height2 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 /* ==== PHOTOGRAPHY GALLERY ==== */
@@ -870,6 +704,19 @@ section {
 }
 
 /* ==== RECENT POST ==== */
+#recent-post {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+#recent-post .recent-wrap {
+  padding: 15px;
+}
+
 /* ==== CONTACT ==== */
 #contact {
   background: url("../images/contact-bg-stock.jpg") center fixed;
@@ -899,12 +746,21 @@ section {
   line-height: 2.2rem;
 }
 
+#contact #contactForm .form-control {
+  background: #2a2a2a;
+  border: 1px solid #a8a8a8;
+  color: #fff;
+  width: 95%;
+}
+
 #contact .text-danger {
   color: #a94442;
 }
 
 #contact .contact-info ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #contact .contact-info li {
@@ -944,7 +800,7 @@ footer {
   /* ==== BLOG COMMENTS ==== */
 }
 
-.post header, .post .post-excerpt {
+.post header, .post .post-excerpt, .post .post-body {
   padding: 20px;
 }
 
@@ -954,12 +810,26 @@ footer {
   border-bottom: 1px solid #ddd;
 }
 
+.post header h3 a:link, .post header h3 a:visited, .post header h1 a:link, .post header h1 a:visited {
+  color: #2a2a2a;
+}
+
+.post header h3 a:hover, .post header h1 a:hover {
+  color: #a8a8a8;
+}
+
 .post header h1 {
-  font-size: 24px;
+  font-size: 2.5rem;
 }
 
 .post .post-image {
   height: auto;
+}
+
+.post .post-image img {
+  height: 250px;
+  width: 100%;
+  object-fit: fill;
 }
 
 .post .post-details {
@@ -977,10 +847,10 @@ footer {
 }
 
 .post .post-comments-badge {
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
   position: absolute;
-  top: 10px;
+  top: 37px;
   right: 10px;
   border: none;
   border-radius: 100%;
@@ -995,8 +865,8 @@ footer {
   display: table-cell;
   vertical-align: middle;
   color: #fff;
-  font-size: 1.75rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .post .post-comments-badge i.fa {
@@ -1011,12 +881,154 @@ footer {
   transition: all 0.6s ease;
 }
 
+/* ==== BLOG COMMENTS ==== */
+#comments {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#comments .comments-wrap {
+  padding: 10px;
+}
+
+#comments h3 {
+  text-align: center;
+}
+
+#comments ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comments ol li {
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+#comments ol li ol.children {
+  padding: 0;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+#comments #leave-comment {
+  margin: 40px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+/* ==== BLOG WIDGETS ==== */
+aside .widget {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin: 0 0 40px;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+aside .widget h4 {
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.75rem;
+}
+
+aside .widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside .widget li {
+  margin: 0 0 5px;
+}
+
+aside .widget li:hover {
+  position: relative;
+  left: 1px;
+  transition: all 0.6s ease;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .badge.social {
+    font-size: 17px;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
+  }
+  .home {
+    padding-top: 0;
+  }
+  .blog {
+    padding-top: 70px;
+  }
+  .gallery {
+    padding-top: 70px;
+  }
   .navbar-nav {
     border: none;
     width: auto;
-    margin: 7.5px -15px;
+    margin: 7.5px -30px;
+  }
+  #header-sticky .main-nav {
+    top: 13px;
+  }
+  #header-sticky .main-nav li {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .social-header-icons {
+    top: 26px;
+  }
+  .social-header-icons i {
+    padding: 4px 0;
+  }
+  /* === GALLERY PAGES === */
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  /* ---- .grid-item ---- */
+  .grid-item {
+    float: left;
+    width: 200px;
+    border: 1px solid #333;
+    height: 200px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .grid-object {
+    background-size: cover;
+    object-fit: cover;
+  }
+  .grid-item--width2 {
+    width: 200px;
+  }
+  .grid-item--height2 {
+    height: 400px;
+  }
+  .grid-item--height2 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
   /* ==== PHOTOGRAPHY GALLERY ==== */
   #gallery-showcase .image-pod {
@@ -1037,6 +1049,19 @@ footer {
     background: url("../images/maine-waterfall-print-pod.jpg") no-repeat;
     background-size: cover;
   }
+  .post {
+    /* ==== BLOG COMMENTS ==== */
+  }
+  .post .post-comments-badge {
+    height: 50px;
+    width: 50px;
+    top: 32px;
+    right: 10px;
+  }
+  .post .post-comments-badge a {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
   /* ==== CONTACT ==== */
   #contact .dotted-line {
     border-right: 0.2rem dashed #a8a8a8;
@@ -1048,6 +1073,68 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .badge.social {
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+  }
+  .navbar-nav {
+    border: none;
+    width: auto;
+    margin: 7.5px -15px;
+  }
+  #header-sticky .main-nav {
+    top: 7px;
+  }
+  #header-sticky .main-nav li {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+  .social-header-icons {
+    top: 20px;
+  }
+  .social-header-icons i {
+    padding: 5px;
+  }
+  /* === GALLERY PAGES === */
+  .grid {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  /* ---- .grid-item ---- */
+  .grid-item {
+    float: left;
+    width: 300px;
+    border: 1px solid #333;
+    height: 200px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .grid-object {
+    background-size: cover;
+    object-fit: cover;
+  }
+  .grid-item--width2 {
+    width: 600px;
+  }
+  .grid-item--height2 {
+    height: 600px;
+  }
+  .grid-item--height2 img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
   .seperator {
     width: 5px;
     padding: 0 16px;
@@ -1055,6 +1142,15 @@ footer {
   }
   #gallery-showcase #print-pod h3 {
     right: 15px;
+  }
+  .post {
+    /* ==== BLOG COMMENTS ==== */
+  }
+  .post .post-comments-badge {
+    height: 70px;
+    width: 70px;
+    top: 10px;
+    right: 10px;
   }
 }
 

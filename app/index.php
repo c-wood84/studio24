@@ -90,10 +90,10 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
     <div class="navbar-wrapper">
         <div class="navbar-studio24">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header col-sm-2">
                     <a href="/" class="main-logo"><img src="images/Studio24Logo.png" height="75px" alt="Studio24"></a>
                 </div><!-- navbar header -->
-                <div id="nav" class="hidden-xs col-sm-5 col-sm-offset-1 main-nav">
+                <div id="nav" class="hidden-xs col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 main-nav">
                     <ul class="nav navbar-nav">
                         <!-- <li class="active"><a href="/">Home</a></li>
                         <li class="seperator">/</li> -->
@@ -107,7 +107,7 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
                     </ul><!-- nav -->
                 </div><!-- main nav -->
                 
-                <div class="hidden-xs col-sm-4 col-sm-offset-1 social-header-icons">
+                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4 social-header-icons">
                     <a href="https://www.facebook.com/RBoltonPhotography" target="_blank" class="badge social facebook" alt="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><!-- facebook -->
                     <a href="https://twitter.com/Roxane_24" target="_blank" class="badge social twitter" alt="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><!-- twitter -->
                     <a href="" target="_blank" class="badge social linked-in" alt="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a><!-- linked in -->
@@ -215,6 +215,35 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
     </div>
 </section><!-- about -->
 
+<!-- about section -->
+<section id="about">
+    <div class="container">
+        <div class="section-header">
+            <div class="head-text"><h2>About</h2></div>    
+            <!-- <div class="sub-text">dddddddd</div> -->
+            <div class="center-line"></div>
+        </div><!-- section header -->
+
+        <div class="about-img-2">
+            <img src="images/studio24-about-img.jpg" alt="">
+        </div>
+
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
+
+            <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
+
+            <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
+
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iaculis ligula.</p>
+
+            <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
+
+            <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
+    </div>
+</section><!-- about -->
+
 <section id="gallery-showcase">
     <div class="section-header">
         <div class="head-text"><h2>Photography Gallery</h2></div>    
@@ -248,7 +277,31 @@ if (!$errName && !$errPhone && !$errEmail && !$errMessage && !$errHuman) {
                 <div class="center-line"></div>
             </div><!-- section header -->
                 <div class="row">
-                        Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
+                    <div id="recent-post">
+                        <article class="post">
+                            <header>
+                                <h3>Blog Title</h3>
+                                <div class="post-details">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Wesley Chitwood
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> <time>June 1, 2017</time>
+                                    <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="">folder 1</a>, <a href="">folder 2</a>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> Tagged <a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a>, <a href="">Tag 4</a>
+                                    <div class="post-comments-badge">
+                                        <a href=""><i class="fa fa-comments" aria-hidden="true"></i>160</a>
+                                    </div>
+                                </div><!-- post details -->
+                            </header>
+
+                            <div class="post-image">
+                                <img src="images/blog-post.jpg" alt="">
+                            </div><!-- post image -->
+
+                            <div class="post-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iac... <a href="">continue reading &raquo;</a>  </p>
+                            </div><!-- post excerpt -->
+                        </article>
+                        <a href="blog.html" class="btn btn-24">View Blog</a>
+                    </div>
 
                 </div><!-- row -->
         </div><!-- container -->

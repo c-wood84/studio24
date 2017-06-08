@@ -1,4 +1,7 @@
 $('.grid').isotope({
-  layoutMode: 'packery',
-  itemSelector: '.grid-item'
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100
+  }
 });
+

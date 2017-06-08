@@ -35,17 +35,17 @@
         <!-- site style css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".site-header" data-offset="50">
+<body data-spy="scroll" data-target=".site-header" data-offset="50" class="home">
 
 <!-- Fade in Navigation for tablet, notebook, and desktop -->
 <header id="header-sticky" class="site-header hidden-xs hidden" role="banner">
     <div class="navbar-wrapper">
         <div class="navbar-studio24">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header col-sm-2">
                     <a href="/" class="main-logo"><img src="images/Studio24Logo.png" height="75px" alt="Studio24"></a>
                 </div><!-- navbar header -->
-                <div id="nav" class="hidden-xs col-sm-5 col-sm-offset-1 main-nav">
+                <div id="nav" class="hidden-xs col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 main-nav">
                     <ul class="nav navbar-nav">
                         <!-- <li class="active"><a href="/">Home</a></li>
                         <li class="seperator">/</li> -->
@@ -59,7 +59,7 @@
                     </ul><!-- nav -->
                 </div><!-- main nav -->
                 
-                <div class="hidden-xs col-sm-4 col-sm-offset-1 social-header-icons">
+                <div class="hidden-xs col-sm-4 col-md-4 col-lg-4 social-header-icons">
                     <a href="https://www.facebook.com/RBoltonPhotography" target="_blank" class="badge social facebook" alt="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a><!-- facebook -->
                     <a href="https://twitter.com/Roxane_24" target="_blank" class="badge social twitter" alt="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><!-- twitter -->
                     <a href="" target="_blank" class="badge social linked-in" alt="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a><!-- linked in -->
@@ -74,7 +74,7 @@
 
 
 <!-- MOBILE ONLY (header and navigation -->
-<header id="mobile-fixednav" class="navbar navbar-default visible-xs">
+<header id="mobile-fixednav" class="navbar navbar-default visible-xs site-header">
     <div class="container">
         <div class="mobile-logo">
             <h1>
@@ -160,7 +160,6 @@
             <p>Donec lectus elit, congue quis quam ac, aliquet interdum metus. Donec vitae mi quis dolor vestibulum ullamcorper sit amet vitae risus. Vivamus risus augue, pretium ac velit eget, tristique rhoncus eros. Quisque convallis faucibus tristique. Morbi pretium lectus et justo maximus, id blandit augue rutrum. Nullam ultricies leo eu enim efficitur malesuada. Fusce a placerat metus, et feugiat lectus. Phasellus sit amet tristique justo.</p>
 
             <p>Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare. Donec sit amet pulvinar magna, at maximus tellus. Cras et ultricies mi, vitae ornare libero. Praesent sit amet posuere sapien, ut dapibus metus. Sed luctus metus sed hendrerit posuere. Pellentesque vulputate arcu ac nunc condimentum, vitae condimentum magna dapibus. Nunc id lorem nec massa egestas consequat quis non libero.</p>
-
     </div>
 </section><!-- about -->
 
@@ -172,15 +171,15 @@
         </div><!-- section header -->
     <div class="row">
             <div id="gallery-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Gallery</a></h3>
+                <h3><a href="gallery.html">Gallery</a></h3>
             </div><!-- gallery pod -->
 
             <div id="panoramic-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Panoramic</a></h3>
+                <h3><a href="panoramic.html">Panoramic</a></h3>
             </div><!-- panoramic pod -->
 
             <div id="print-pod" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image-pod hvr-shutter-in-horizontal">
-                <h3><a href="#">Print</a></h3>
+                <h3><a href="print.html">Print</a></h3>
             </div><!-- print pod -->
     </div><!-- row -->
 </section><!-- gallery showcase -->
@@ -193,16 +192,31 @@
                 <div class="center-line"></div>
             </div><!-- section header -->
                 <div class="row">
-                    <div class="blog-wrap">
-                        <div class="blog-multi">
-                            <div>
-                                Morbi bibendum viverra consectetur. Duis hendrerit odio ac diam cursus consequat. Fusce dictum metus vel viverra hendrerit. Mauris ullamcorper diam sed nisi dignissim aliquam. Sed placerat erat in consequat ornare.
+                    <div id="recent-post">
+                        <article class="post">
+                            <header>
+                                <h3>Blog Title</h3>
+                                <div class="post-details">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Wesley Chitwood
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> <time>June 1, 2017</time>
+                                    <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="">folder 1</a>, <a href="">folder 2</a>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> Tagged <a href="">Tag 1</a>, <a href="">Tag 2</a>, <a href="">Tag 3</a>, <a href="">Tag 4</a>
+                                    <div class="post-comments-badge">
+                                        <a href=""><i class="fa fa-comments" aria-hidden="true"></i>160</a>
+                                    </div>
+                                </div><!-- post details -->
+                            </header>
 
-                            </div>
-                        </div>
+                            <div class="post-image">
+                                <img src="images/blog-post.jpg" alt="">
+                            </div><!-- post image -->
+
+                            <div class="post-excerpt">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula dui, vitae finibus nunc accumsan id. Integer aliquam erat sit amet velit pretium, eu volutpat tortor hendrerit. In luctus magna sit amet varius scelerisque. Fusce pretium venenatis nunc, sed euismod urna. Integer et placerat magna. Aliquam elit erat, bibendum ac enim eget, semper luctus magna. Mauris ut iac... <a href="post.html">continue reading &raquo;</a>  </p>
+                            </div><!-- post excerpt -->
+                        </article>
+                        <a href="blog.html" class="btn btn-24">View Blog</a>
                     </div>
-
-                        
 
                 </div><!-- row -->
         </div><!-- container -->
@@ -221,7 +235,7 @@
             <div class="col-sm-5 col-sm-offset-1 contact-form dotted-line">
                 <h3>Reach Out!</h3>
                 <p>If you are wanting to reach me for a possible quote on a project, wanting to get in touch or just have a general question? please fill out the form and I can back to you.</p>
-                <form id="contactForm" class="form" action="php/index.php">
+                <form id="contactForm" role="form" class="form" method="post" action="index.php">
                     <div class="form-group">
                         <label class="sr-only" for="contact-full-name">Name<span class="required">*</span></label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Please Enter Your Name" required>
@@ -234,32 +248,17 @@
 
                     <div class="form-group">
                         <label class="sr-only" for="contact-email">E-mail<span class="required">*</span></label>
-                        <input type="E-mail" class="form-control" id="email" name="email" placeholder="Please Enter Your E-mail" required="true">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Please Enter Your E-mail" required>
                     </div><!-- form group -->
 
                     <div class="form-group">
-                        <label class="sr-only " for="contact-purpose">Reason for Contact <span class="required">*</span></label>
-                        <select name="contact-reason" class="form-control" id="reason" name="reason">
-                            <option value="">--Please Select One--</option>
-                            <option value="get in touch">Get in Touch</option>
-                            <option value="general questions">General Questions</option>
-                            <option value="request quote">Request a Quote</option>
-                        </select>
-                    </div><!-- form group -->
-                    <div class="form-group">
-                        <label class="sr-only " for="contact-purpose">Comments </label>
-                        <textarea class="form-control" id="comments" name="comments" cols="30" rows="5" placeholder="Leave a comment"></textarea>
-                        <!-- <?php echo "<p class='text-danger'>$errComments</p>";?> -->
+                        <label class="sr-only" for="contact-purpose">Message </label>
+                        <textarea class="form-control" id="message" name="message" cols="30" rows="5" placeholder="Leave a message" required></textarea>
                     </div><!-- form group -->
                         
                     <div class="form-group">
-                        <input type="submit" class="btn btn-24 btn-contact" value="Send">
+                        <input id="submit" name="submit" type="submit" value="Send">
                     </div><!-- form group -->
-
-                    <div class="form-group">
-                        <!-- <?php echo $result; ?> -->
-                    </div><!-- form group -->   
-
 
                 </form><!-- form -->
         </div>
@@ -293,10 +292,10 @@
 
 
     <!-- Parralax Core -->
-    <script type="text/javascript" src="bower_components/skrollr/src/skrollr.js"></script>
+    <!-- <script type="text/javascript" src="bower_components/skrollr/src/skrollr.js"></script>
     <script type="text/javascript">
         var s = skrollr.init();
-    </script>
+    </script> -->
   
 
 
@@ -309,5 +308,7 @@
 
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+
 </body>
 </html>

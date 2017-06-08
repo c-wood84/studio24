@@ -8,10 +8,14 @@
 	}
 }
 
-
-
-
-
+#mobile-fixednav {
+	position: fixed;
+	width: 100%;
+	top:0;
+	height: 180px;
+	background: $white;
+	z-index: 5;
+}
 
 /****** Bootstrap Toggle Ovdride ********/
 .navbar-default { 
@@ -59,7 +63,7 @@
 	padding: 6px 0;
 	text-align: center;
 	i {
-			padding: 5px;
+			padding: 4px 0;
 		}
 
 }
@@ -69,7 +73,7 @@
 	width: 30px;
 	height: 30px;
 	font-size: 17px;
-	line-height: 32px;
+	line-height: 17px;
 	@include circle;
 	color: $white;
 }
