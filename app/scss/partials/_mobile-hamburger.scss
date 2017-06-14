@@ -7,7 +7,7 @@
 				transition: all 500ms ease-in-out;
 				background: $grey;
 				height: 4px;
-				width: 35px;
+				width: 25px;
 			}
 			.icon-bar:nth-child(2) {
 				top: 0px;
@@ -24,7 +24,7 @@
 
 .navbar-toggle.active {
 			.icon-bar:nth-child(2) {
-				top: 6px;
+				top: 1px;
 				-webkit-transform: rotate(-45deg);
 				-moz-transform: rotate(-45deg);
 				-ms-transform: rotate(-45deg);
@@ -33,7 +33,7 @@
 			}
 
 			.icon-bar:nth-child(3) {
-				top: 0px;
+				top: -6px;
 				-webkit-transform: rotate(45deg);
 				-moz-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
