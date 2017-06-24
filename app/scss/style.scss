@@ -12,7 +12,7 @@
 	background: $white;
 	border-bottom: 3px solid $teal;
 	width: 100%;
-	height: 95px;
+	height: 132px;
 	z-index: 100;
 	padding: 5px 10px;
 
@@ -21,14 +21,18 @@
 		padding: 0;
 	}
 
-	.main-logo {
-		display: block;
-		text-indent: -9999px;
-		width: 120px;
-		height: 85px;
-		background: url('../images/studio24logo.svg');
-		background-size:120px 85px;
-		border: 1px solid red;
+	.navbar-studio24 {
+		.navbar-header:first-child a {
+			display: block;
+			background: url('../images/studio24logo.png') no-repeat center;
+			background-size: 100%;
+			text-indent: 100%;
+			// background: url('../images/studio24logo.svg');
+			width: 120px;
+			height: 120px;
+			text-indent: -9999px;
+
+		}
 	}
 
 	.seperator {
@@ -38,9 +42,7 @@
 				font-size: 1.5rem !important;
 			}
 
-			#main-nav {
-				
-			}
+			
 
 			.main-nav {
 				position: relative;
@@ -776,7 +778,7 @@ footer {
 
 	#header-sticky {
 		.main-nav {
-			top: 7px;
+			top: 34px;
 			li {
 				font-size: 1.4rem;
 				padding: 0;
@@ -786,7 +788,7 @@ footer {
 	} 
 
 	.social-header-icons {
-		top: 20px;
+		top: 42px;
 		i {
 			padding: 5px;
 		}

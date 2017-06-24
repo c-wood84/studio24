@@ -35,22 +35,22 @@
         <!-- site style css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".site-header" data-offset="25" class="home">
+<body itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".site-header" data-offset="25" class="home">
 
 <!-- Fade in Navigation for tablet, notebook, and desktop -->
 <header id="header-sticky" class="site-header hidden-xs hidden" role="banner">
     <div class="navbar-wrapper">
-        <div class="navbar-studio24">
+        <nav class="navbar-studio24" itemscope itemtype="http://schema.org/SiteNavigationElements">
             <div class="container">
                 <div class="navbar-header col-sm-2">
-                    <a href="/" class="main-logo">
-                        Studio24 Logo
+                    <a href="/" title="Studio24" itemprop="url" class="main-logo">
+                        <span itemprop="name">
+                           Studio24 
+                        </span>
                     </a>
                 </div><!-- navbar header -->
                 <div id="nav" class="hidden-xs col-sm-6 col-md-6 col-lg-5 col-lg-offset-1 main-nav">
                     <ul class="nav navbar-nav">
-                        <!-- <li class="active"><a href="/">Home</a></li>
-                        <li class="seperator">/</li> -->
                         <li><a href="#about">About</a></li>
                         <li class="seperator">/</li>
                         <li><a href="#gallery-showcase">Photography</a></li>
@@ -70,7 +70,7 @@
                     <a href="" target="_blank" class="badge social pintrest" alt="Pintrest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a><!-- pintrest -->
                 </div>
             </div>
-        </div><!-- navbar studio24 -->
+        </nav><!-- navbar studio24 -->
     </div><!-- navbar wrapper -->
 </header><!-- header -->
 
@@ -144,7 +144,6 @@
     <div class="container">
         <div class="section-header">
             <div class="head-text"><h2>About</h2></div>    
-            <!-- <div class="sub-text">dddddddd</div> -->
             <div class="center-line"></div>
         </div><!-- section header -->
 
@@ -168,7 +167,6 @@
 <section id="gallery-showcase">
         <div class="section-header">
             <div class="head-text"><h2>Photography Gallery</h2></div>    
-            <!-- <div class="sub-text">dddddddd</div> -->
             <div class="center-line"></div>
         </div><!-- section header -->
     <div class="row">
@@ -190,8 +188,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="head-text"><h2>Recent Post</h2></div>    
-                <!-- <div class="sub-text">dddddddd</div> -->
-                <div class="center-line"></div>
+                    <div class="center-line"></div>
             </div><!-- section header -->
                 <div class="row">
                     <div id="recent-post">
@@ -229,8 +226,7 @@
         <div class="container">
             <div class="section-header">
                 <div class="head-text"><h2>Contact</h2></div>    
-                <!-- <div class="sub-text">dddddddd</div> -->
-                <div class="center-line"></div>
+                    <div class="center-line"></div>
             </div><!-- section header -->
 
         <div class="row">
