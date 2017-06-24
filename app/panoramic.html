@@ -43,12 +43,14 @@
         <div class="navbar-studio24">
             <div class="container">
                 <div class="navbar-header col-sm-2">
-                    <a href="/" class="main-logo"><img src="images/Studio24Logo.png" height="75px" alt="Studio24"></a>
+                    <a href="/" title="Studio24" itemprop="url" class="main-logo">
+                        <span itemprop="name">
+                           Studio24 
+                        </span>
+                    </a>
                 </div><!-- navbar header -->
                 <div id="nav" class="hidden-xs col-sm-6 col-md-6 col-lg-6 main-nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                        <li class="seperator">/</li>
                         <li><a href="#">About</a></li>
                         <li class="seperator">/</li>
                         <li><a href="#">Photography</a></li>
@@ -110,7 +112,6 @@
     </div><!-- container -->
 </header><!-- header -->
 
-
 <!-- GALLERY -->
 <section id="gallery">
     <div class="container">
@@ -119,28 +120,14 @@
             <!-- <div class="sub-text">dddddddd</div> -->
             <div class="center-line"></div>
         </div><!-- section header -->
-        
-        <!-- <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Gallery</a></li>
-            <li class="breadcrumb-item active">Panoramic</li>
-            <li class="breadcrumb-item"><a href="#">Print</a></li>
-        </ol> -->
-        
     </div><!-- container -->
-    <div class="grid">
+    <<!-- start Grid here -->
+   <div class="grid-container">
 
         <h1>Coming Soon!</h1>
         
     </div> <!-- grid -->   
 </section><!-- section (gallery) -->
-
-
-
-
-
-
-
-
 
 <footer>
     <div class="container clearfix">
@@ -159,7 +146,12 @@
 
   <!-- BOOTSTRAP CORE JAVASCRIPT (place at the end of the document so the pages load faster) -->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Isotope Gallery -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.debouncedresize.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
     <!-- <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 </html>
