@@ -1,9 +1,8 @@
 
 .mobile-logo {
 	text-align: center;
-	border-bottom: 2px solid $teal;
+	border-bottom: 2px solid $grey;
 	img {
-		width: 30%;
 		height: auto;
 	}
 }
@@ -15,6 +14,11 @@
 	height: 180px;
 	background: $white;
 	z-index: 5;
+
+	.navbar-header {
+		background: $white;
+		border-bottom: 3px solid $teal;
+	}
 }
 
 /****** Bootstrap Toggle Ovdride ********/
@@ -32,6 +36,7 @@
 			.navbar-collapse {
 					background: #fff;
 					border-color: $grey !important;
+					border-bottom: 1px solid $grey !important;
 				.nav{
 					li {
 						border-bottom: 1px solid $grey;
@@ -52,6 +57,12 @@
 					margin: 0 -15px 4px -15px;
 				}
 			}
+
+	}
+
+	.navbar-default .navbar-nav > .active > a { 
+		color: $teal !important;
+
 	}
 
 /****** Mobile Social Icons ********/
@@ -68,38 +79,37 @@
 
 }
 
-.badge.mobile-social {
-	background: $grey;
+.mobile-social {
 	width: 30px;
 	height: 30px;
 	font-size: 17px;
 	line-height: 17px;
-	@include circle;
-	color: $white;
+	color: $teal;
+	padding: 0 5px 0;
 }
 
-.badge.mobile-social.facebook:hover {
-	background-color: $facebook;
+.mobile-social.facebook:hover {
+	color: $facebook;
 }
 
-.badge.mobile-social.twitter:hover {
-	background-color: $twitter;
+.mobile-social.twitter:hover {
+	color: $twitter;
 }
 
-.badge.mobile-social.linked-in:hover {
-	background-color: $linkedin;
+.mobile-social.linked-in:hover {
+	color: $linkedin;
 }
 
-.badge.mobile-social.instagram:hover {
-	background-color: $instagram;
+.mobile-social.instagram:hover {
+	color: $instagram;
 }
 
-.badge.mobile-social.gplus:hover {
-	background-color: $googleplus;
+.mobile-social.gplus:hover {
+	color: $googleplus;
 }
 
-.badge.mobile-social.pintrest:hover {
-	background-color: $pinterest;
+.mobile-social.pintrest:hover {
+	color: $pinterest;
 }
 
 

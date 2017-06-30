@@ -1,29 +1,14 @@
 $(document).ready(function(){
 	$(window).scroll(function(){
 		var scrollTop = 
-$(window).scrollTop();
-// animated in header navigation
-	if (scrollTop > 645) {
+		$(window).scrollTop();
+	if (scrollTop > 970) {
+		$('#header').addClass('sticky');
 
-		$('#header-sticky').removeClass('hidden');
-		$('#header-sticky').addClass('fadeInDown');
-		$('#header-sticky').removeClass('fadeOutUp');
-		$('#header-sticky').addClass('animated');
 	} else {
-		$('#header-sticky').addClass('fadeOutUp');
-        $('#header-sticky').removeClass('fadeInUp');
+		$('#header').removeClass('sticky');
+
 	}
-
-	// animated in for hero social icons
-	if (scrollTop > 655) {
-
-		$('#social-hero').removeClass('slideInLeft');
-		$('#social-hero').addClass('slideOutLeft');
-		
-	} else {
-		$('#social-hero').removeClass('slideOutLeft');
-		$('#social-hero').addClass('slideInLeft');
-	} 
 
 	//animated for Hero Logo 
 	if (scrollTop > 400) {

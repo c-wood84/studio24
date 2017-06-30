@@ -60,6 +60,7 @@ a:hover {
 button, input, select, .btn, a.btn {
 	@include sexy-text;
 	color: #fff;
+	font-weight: 500;
 }
 
 .btn {
@@ -79,6 +80,25 @@ button, input, select, .btn, a.btn {
 	@include hover-transition;
 }
 
+
+.teal {
+	background:$teal;
+	color: $white;
+}
+
+
+.light-grey {
+	background: $light-grey;
+	
+}
+
+.grey {
+	background:$grey;
+	color:$black;
+}
+
+
+
 blockquote {
 	font-style: italic;
 	border: none;
@@ -89,45 +109,43 @@ blockquote {
 }
 
 
-.badge.social {
-	background: $grey;
+.social {
 	font-size: 24px;
 	width: 35px;
 	height: 35px;
 	line-height: 37px;
-	color: $white;
+	color: $teal !important;
 	padding: 0;
 	margin: 0 5px 20px 0;
-	@include circle;
 }
 
-.badge.social.facebook:hover {
-	background-color: $facebook;
+.social.facebook:hover {
+	color: $facebook !important;
 	@include hover-transition;
 }
 
-.badge.social.twitter:hover {
-	background-color: $twitter;
+.social.twitter:hover {
+	color: $twitter !important;
 	@include hover-transition;
 }
 
-.badge.social.linked-in:hover {
-	background-color: $linkedin;
+.social.linked-in:hover {
+	color: $linkedin !important;
 	@include hover-transition;
 }
 
-.badge.social.instagram:hover {
-	background-color: $instagram;
+.social.instagram:hover {
+	color: $instagram !important;
 	@include hover-transition;
 }
 
-.badge.social.gplus:hover {
-	background-color: $googleplus;
+.social.gplus:hover {
+	color: $googleplus !important;
 	@include hover-transition;
 }
 
-.badge.social.pintrest:hover {
-	background-color: $pinterest;
+.social.pintrest:hover {
+	color: $pinterest !important;
 	@include hover-transition;
 }
 
@@ -164,6 +182,8 @@ label {
 	-moz-border-radius:0px;
 	height: 34px;
 }
+
+
 
 input[type="text"],
 input[type="phone"],
@@ -214,13 +234,55 @@ button[type="submit"]:hover {
 
 }
 
+/**** For WordPress Only *****/
+
+#wpcf7-f108-o1 input[type="submit"]:hover,
+#wpcf7-f108-o1 button[type="submit"]:hover {
+  background: #02c8d8;
+  transition: all 0.6s ease;
+}
+
+#wpcf7-f108-o1 input[type="text"],
+#wpcf7-f108-o1 input[type="tel"],
+#wpcf7-f108-o1 input[type="email"],
+#wpcf7-f108-o1 input[type="url"],
+#wpcf7-f108-o1 input[type="search"],
+#wpcf7-f108-o1 textarea {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border: 1px solid #a8a8a8;
+  padding: 4px 8px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background: $black;
+}
+
+#wpcf7-f108-o1 .form-group {
+	margin-bottom: 0;
+}
+
+.acf-map {
+    width: 100%;
+    height: 275px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
+}
+
+// .widgettitle {
+// 	display: none;
+// }
+
+/**** END WordPress Only *****/
+
 .alert {
 	width: 92%;
 }
 
 
 
-@import 'partials/_mobile-hamburger.scss';
+
 
 
 
